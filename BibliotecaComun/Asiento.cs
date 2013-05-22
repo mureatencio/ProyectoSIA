@@ -15,6 +15,6 @@ namespace BibliotecasComunes
         public string TotalDebeLocal { get; set; }
         public string TotalHaberLocal { get; set; }
         public string TotalDebeSistema { get; set; }
-        public string TotalHaberSistema { get; set; }
+        public string TotalHaberSistema { get; set ; }
     }
 }

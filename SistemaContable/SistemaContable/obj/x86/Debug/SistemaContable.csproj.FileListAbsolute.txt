@@ -111,3 +111,6 @@ C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\Cli
 C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\BibliotecasComunes.pdb
 C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\ClienteBancoCentral.pdb
 C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\itextsharp.xml
+C:\Users\Miguel\Desktop\Git SIA\SistemaContable\SistemaContable\bin\Debug\SistemaContable.exe.config
+C:\Users\Miguel\Desktop\Git SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.exe
+C:\Users\Miguel\Desktop\Git SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.pdb
