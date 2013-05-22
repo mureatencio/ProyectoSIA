@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC59A6A2-AB8B-478D-9AEE-437A781DB091}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SistemaContable</RootNamespace>
+    <AssemblyName>SistemaContable</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="itextsharp, Version=5.4.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseDatos\AccesoAsientos.cs" />
+    <Compile Include="BaseDatos\AccesoBalance.cs" />
+    <Compile Include="BaseDatos\AccesoCierre.cs" />
+    <Compile Include="BaseDatos\AccesoCuentas.cs" />
+    <Compile Include="BaseDatos\AccesoDatos.cs" />
+    <Compile Include="BaseDatos\AccesoEmpresas.cs" />
+    <Compile Include="BaseDatos\AccesoEstadoResultados.cs" />
+    <Compile Include="BaseDatos\AccesoMonedas.cs" />
+    <Compile Include="BaseDatos\AccesoUsuarios.cs" />
+    <Compile Include="BaseDatos\SqlServer.cs" />
+    <Compile Include="Interfaces\AsientosDiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\AsientosDiario.designer.cs">
+      <DependentUpon>AsientosDiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\CatalogoCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\CatalogoCuentas.designer.cs">
+      <DependentUpon>CatalogoCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ControlPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\ControlPanel.designer.cs">
+      <DependentUpon>ControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\CuentaAsiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\CuentaAsiento.designer.cs">
+      <DependentUpon>CuentaAsiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\EditarCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\EditarCuentas.designer.cs">
+      <DependentUpon>EditarCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\EstadoResultados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\EstadoResultados.designer.cs">
+      <DependentUpon>EstadoResultados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Reportes.Designer.cs">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ReportesERBG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\ReportesERBG.Designer.cs">
+      <DependentUpon>ReportesERBG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\VentanaBalanceGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\VentanaBalanceGeneral.designer.cs">
+      <DependentUpon>VentanaBalanceGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\VentanaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\VentanaPrincipal.designer.cs">
+      <DependentUpon>VentanaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\VerAsiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\VerAsiento.designer.cs">
+      <DependentUpon>VerAsiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logica\LogicaAsientos.cs" />
+    <Compile Include="Logica\LogicaBalance.cs" />
+    <Compile Include="Logica\LogicaCierre.cs" />
+    <Compile Include="Logica\LogicaCuentas.cs" />
+    <Compile Include="Logica\LogicaEmpresas.cs" />
+    <Compile Include="Logica\LogicaEstadoResultados.cs" />
+    <Compile Include="Logica\LogicaMonedas.cs" />
+    <Compile Include="Logica\LogicaUsuarios.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\BalanceComprobacion.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BalanceComprobacion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service References\ServicioAsientos\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Interfaces\AsientosDiario.resx">
+      <DependentUpon>AsientosDiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\CatalogoCuentas.resx">
+      <DependentUpon>CatalogoCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\ControlPanel.resx">
+      <DependentUpon>ControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\CuentaAsiento.resx">
+      <DependentUpon>CuentaAsiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\EditarCuentas.resx">
+      <DependentUpon>EditarCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\EstadoResultados.resx">
+      <DependentUpon>EstadoResultados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Reportes.resx">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\ReportesERBG.resx">
+      <DependentUpon>ReportesERBG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\VentanaBalanceGeneral.resx">
+      <DependentUpon>VentanaBalanceGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\VentanaPrincipal.resx">
+      <DependentUpon>VentanaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\VerAsiento.resx">
+      <DependentUpon>VerAsiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\BalanceComprobacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BalanceComprobacion.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\DataSources\SistemaContable.DataSets.estadoResultados.datasource" />
+    <None Include="Service References\ServicioAsientos\GuardarAsientosWS.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BibliotecaComun\BibliotecasComunes.csproj">
+      <Project>{7B7DB48C-D51B-48F7-B035-D52719FF398A}</Project>
+      <Name>BibliotecasComunes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ClienteBancoCentral\ClienteBancoCentral\ClienteBancoCentral.csproj">
+      <Project>{70EF9BD9-AA5D-4F8D-8161-481640277030}</Project>
+      <Name>ClienteBancoCentral</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServicioAsientos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioAsientos\GuardarAsientosWS.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioAsientos\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioAsientos\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioAsientos\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="GuardarAsientosWS.asmx.cs" Class="AsientosWS.GuardarAsientosWS" %>

@@ -1,0 +1,10 @@
+c:\users\alejandro\documents\visual studio 2010\Projects\RegistrarAsientosWS\RegistrarAsientosWS\bin\RegistrarAsientosWS.dll
+c:\users\alejandro\documents\visual studio 2010\Projects\RegistrarAsientosWS\RegistrarAsientosWS\bin\RegistrarAsientosWS.pdb
+c:\users\alejandro\documents\visual studio 2010\Projects\RegistrarAsientosWS\RegistrarAsientosWS\obj\Debug\RegistrarAsientosWS.dll
+c:\users\alejandro\documents\visual studio 2010\Projects\RegistrarAsientosWS\RegistrarAsientosWS\obj\Debug\RegistrarAsientosWS.pdb
+C:\Users\Alejandro\Documents\Visual Studio 2010\Projects\RegistrarAsientosWS\RegistrarAsientosWS\obj\Debug\RegistrarAsientosWS.csprojResolveAssemblyReference.cache
+C:\Users\Hugo\Desktop\RegistrarAsientosWS\RegistrarAsientosWS\bin\RegistrarAsientosWS.dll
+C:\Users\Hugo\Desktop\RegistrarAsientosWS\RegistrarAsientosWS\bin\RegistrarAsientosWS.pdb
+C:\Users\Hugo\Desktop\RegistrarAsientosWS\RegistrarAsientosWS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Hugo\Desktop\RegistrarAsientosWS\RegistrarAsientosWS\obj\Debug\RegistrarAsientosWS.dll
+C:\Users\Hugo\Desktop\RegistrarAsientosWS\RegistrarAsientosWS\obj\Debug\RegistrarAsientosWS.pdb

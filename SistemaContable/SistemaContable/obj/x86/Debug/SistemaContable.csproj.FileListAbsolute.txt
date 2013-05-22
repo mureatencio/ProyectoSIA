@@ -1,0 +1,113 @@
+C:\Users\Erick\Documents\Visual Studio 2010\Projects\SistemaContable\SistemaContable\bin\Debug\SistemaContable.exe.config
+C:\Users\Erick\Documents\Visual Studio 2010\Projects\SistemaContable\SistemaContable\bin\Debug\SistemaContable.exe
+C:\Users\Erick\Documents\Visual Studio 2010\Projects\SistemaContable\SistemaContable\bin\Debug\SistemaContable.pdb
+C:\Users\Erick\Documents\Visual Studio 2010\Projects\SistemaContable\SistemaContable\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Erick\Documents\Visual Studio 2010\Projects\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.AsientosDiario.resources
+C:\Users\Erick\Documents\Visual Studio 2010\Projects\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.CatalogoCuentas.resources
+C:\Users\Erick\Documents\Visual Studio 2010\Projects\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.vntEditarCuenta.resources
+C:\Users\Erick\Documents\Visual Studio 2010\Projects\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.IPrincipal.resources
+C:\Users\Erick\Documents\Visual Studio 2010\Projects\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Properties.Resources.resources
+C:\Users\Erick\Documents\Visual Studio 2010\Projects\SistemaContable\SistemaContable\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Erick\Documents\Visual Studio 2010\Projects\SistemaContable\SistemaContable\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Erick\Documents\Visual Studio 2010\Projects\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.exe
+C:\Users\Erick\Documents\Visual Studio 2010\Projects\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.pdb
+C:\Users\TEMP\Desktop\SistemaContable\SistemaContable\bin\Debug\SistemaContable.exe.config
+C:\Users\TEMP\Desktop\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.exe
+C:\Users\TEMP\Desktop\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.pdb
+C:\Users\TEMP\Desktop\PrograSia\SistemaContable\SistemaContable\bin\Debug\SistemaContable.exe.config
+C:\Users\TEMP\Desktop\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.exe
+C:\Users\TEMP\Desktop\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.pdb
+C:\Users\TEMP\Desktop\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\TEMP\Desktop\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.AsientosDiario.resources
+C:\Users\TEMP\Desktop\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.CatalogoCuentas.resources
+C:\Users\TEMP\Desktop\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.vntEditarCuenta.resources
+C:\Users\TEMP\Desktop\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Anular.resources
+C:\Users\TEMP\Desktop\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.TipoCambio.resources
+C:\Users\TEMP\Desktop\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.IPrincipal.resources
+C:\Users\TEMP\Desktop\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Properties.Resources.resources
+C:\Users\TEMP\Desktop\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\TEMP\Desktop\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Miguel\Documents\PrograSia\PrograSia\SistemaContable\SistemaContable\bin\Debug\SistemaContable.exe.config
+C:\Users\Miguel\Documents\PrograSia\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.exe
+C:\Users\Miguel\Documents\PrograSia\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.pdb
+C:\Users\Miguel\Documents\PrograSia\PrograSia\SistemaContable\SistemaContable\bin\Debug\SistemaContable.exe
+C:\Users\Miguel\Documents\PrograSia\PrograSia\SistemaContable\SistemaContable\bin\Debug\SistemaContable.pdb
+C:\Users\Miguel\Documents\PrograSia\PrograSia\SistemaContable\SistemaContable\bin\Debug\ClassLibrary1.dll
+C:\Users\Miguel\Documents\PrograSia\PrograSia\SistemaContable\SistemaContable\bin\Debug\ClassLibrary1.pdb
+C:\Users\Miguel\Documents\PrograSia\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.csprojResolveAssemblyReference.cache
+C:\Users\Miguel\Documents\PrograSia\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.AsientosDiario.resources
+C:\Users\Miguel\Documents\PrograSia\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.CatalogoCuentas.resources
+C:\Users\Miguel\Documents\PrograSia\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.vntEditarCuenta.resources
+C:\Users\Miguel\Documents\PrograSia\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.AnularAsiento.resources
+C:\Users\Miguel\Documents\PrograSia\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.TipoCambio.resources
+C:\Users\Miguel\Documents\PrograSia\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.IPrincipal.resources
+C:\Users\Miguel\Documents\PrograSia\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Properties.Resources.resources
+C:\Users\Miguel\Documents\PrograSia\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.csproj.GenerateResource.Cache
+C:\Users\Miguel\Documents\PrograSia\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.ControlPanel.resources
+C:\Users\Miguel\Documents\PrograSia\PrograSia\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.Login.resources
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\bin\Debug\SistemaContable.exe.config
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.exe
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.pdb
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\bin\Debug\SistemaContable.exe
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\bin\Debug\SistemaContable.pdb
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\bin\Debug\BibliotecasComunes.dll
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\bin\Debug\BibliotecasComunes.pdb
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.AsientosDiario.resources
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.CuentaAsiento.resources
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.CatalogoCuentas.resources
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.vntEditarCuenta.resources
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.VerAsiento.resources
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.ControlPanel.resources
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.Login.resources
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.TipoCambio.resources
+C:\Users\Hugo\Desktop\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.VentanaPrincipal.resources
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\SistemaContable.exe.config
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.exe
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.pdb
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\SistemaContable.exe
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\SistemaContable.pdb
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\BibliotecasComunes.dll
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\BibliotecasComunes.pdb
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.AsientosDiario.resources
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.ControlPanel.resources
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.VentanaPrincipal.resources
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.Login.resources
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.TipoCambio.resources
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.VerAsiento.resources
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.CatalogoCuentas.resources
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.CuentaAsiento.resources
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.vntEditarCuenta.resources
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.Reportes.resources
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.ReportesERBG.resources
+C:\Users\Prueba\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\itextsharp.xml
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\SistemaContable.exe.config
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.exe
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.pdb
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.AsientosDiario.resources
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.ControlPanel.resources
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.Reportes.resources
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.ReportesERBG.resources
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.VentanaPrincipal.resources
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.Login.resources
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.VerAsiento.resources
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.CatalogoCuentas.resources
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.CuentaAsiento.resources
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.vntEditarCuenta.resources
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.EstadoResultados.resources
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.VentanaBalanceGeneral.resources
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\SistemaContable.exe
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\SistemaContable.pdb
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\BibliotecasComunes.dll
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\ClienteBancoCentral.dll
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\BibliotecasComunes.pdb
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\ClienteBancoCentral.pdb
+C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\itextsharp.xml
