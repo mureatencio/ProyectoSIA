@@ -8,7 +8,6 @@ namespace BibliotecasComunes
     public class Asiento
     {
         public int Codigo { get; set; }
-
         public string Detalle { get; set; }
         public string FechaDocumento { get; set; }
         public string FechaContabilizacion { get; set; }
