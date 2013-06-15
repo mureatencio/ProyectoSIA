@@ -44,5 +44,6 @@ namespace SistemaContable.Logica
                 throw new Exception(ex.Message);
             }
         }
+		
     }
 }

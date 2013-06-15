@@ -44,6 +44,9 @@
             this.lblCedula = new System.Windows.Forms.Label();
             this.lblTel = new System.Windows.Forms.Label();
             this.lblF = new System.Windows.Forms.Label();
+            this.sociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresarNuevoSocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verSocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuVentanaPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +58,7 @@
             this.asientosToolStripMenuItem,
             this.cierresContablesToolStripMenuItem,
             this.reportesToolStripMenuItem,
+            this.sociosToolStripMenuItem,
             this.configuraciónToolStripMenuItem});
             this.menuVentanaPrincipal.Location = new System.Drawing.Point(0, 0);
             this.menuVentanaPrincipal.Name = "menuVentanaPrincipal";
@@ -185,6 +189,29 @@
             this.lblF.TabIndex = 10;
             this.lblF.Text = "Fax: ";
             // 
+            // sociosToolStripMenuItem
+            // 
+            this.sociosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ingresarNuevoSocioToolStripMenuItem,
+            this.verSocioToolStripMenuItem});
+            this.sociosToolStripMenuItem.Name = "sociosToolStripMenuItem";
+            this.sociosToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.sociosToolStripMenuItem.Text = "Socios";
+            // 
+            // ingresarNuevoSocioToolStripMenuItem
+            // 
+            this.ingresarNuevoSocioToolStripMenuItem.Name = "ingresarNuevoSocioToolStripMenuItem";
+            this.ingresarNuevoSocioToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.ingresarNuevoSocioToolStripMenuItem.Text = "Ingresar Nuevo Socio";
+            this.ingresarNuevoSocioToolStripMenuItem.Click += new System.EventHandler(this.ingresarNuevoSocioToolStripMenuItem_Click);
+            // 
+            // verSocioToolStripMenuItem
+            // 
+            this.verSocioToolStripMenuItem.Name = "verSocioToolStripMenuItem";
+            this.verSocioToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.verSocioToolStripMenuItem.Text = "Ver Socio";
+            this.verSocioToolStripMenuItem.Click += new System.EventHandler(this.verSocioToolStripMenuItem_Click);
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -224,5 +251,8 @@
         private System.Windows.Forms.Label lblCedula;
         private System.Windows.Forms.Label lblTel;
         private System.Windows.Forms.Label lblF;
+        private System.Windows.Forms.ToolStripMenuItem sociosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ingresarNuevoSocioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verSocioToolStripMenuItem;
     }
 }

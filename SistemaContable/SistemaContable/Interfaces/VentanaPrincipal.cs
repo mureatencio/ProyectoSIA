@@ -96,5 +96,17 @@ namespace SistemaContable.Interfaces
             VerAsiento ventanaAsientos = new VerAsiento(this.NombreEmpresa);
             ventanaAsientos.ShowDialog();
         }
+
+        private void ingresarNuevoSocioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InsertarSocio ventanaingresarsocios = new InsertarSocio(this.NombreEmpresa);
+            ventanaingresarsocios.ShowDialog();
+        }
+
+        private void verSocioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MuestraSocios ventanaversocios = new MuestraSocios(this.NombreEmpresa);
+            ventanaversocios.ShowDialog();
+        }
     }
 }

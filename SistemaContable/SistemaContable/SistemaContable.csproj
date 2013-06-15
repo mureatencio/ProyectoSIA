@@ -128,11 +128,23 @@
     <Compile Include="Interfaces\EstadoResultados.designer.cs">
       <DependentUpon>EstadoResultados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\InsertarSocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\InsertarSocio.Designer.cs">
+      <DependentUpon>InsertarSocio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interfaces\Login.designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\MuestraSocios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\MuestraSocios.Designer.cs">
+      <DependentUpon>MuestraSocios.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\Reportes.cs">
       <SubType>Form</SubType>
@@ -204,8 +216,14 @@
     <EmbeddedResource Include="Interfaces\EstadoResultados.resx">
       <DependentUpon>EstadoResultados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\InsertarSocio.resx">
+      <DependentUpon>InsertarSocio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\MuestraSocios.resx">
+      <DependentUpon>MuestraSocios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Reportes.resx">
       <DependentUpon>Reportes.cs</DependentUpon>

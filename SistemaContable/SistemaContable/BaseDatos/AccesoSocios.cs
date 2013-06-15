@@ -97,5 +97,6 @@ namespace SistemaContable.BaseDatos
             }
             return resultado;
         }
+		
     }
 }
