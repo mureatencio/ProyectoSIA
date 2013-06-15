@@ -114,3 +114,5 @@ C:\Users\Hugo\Desktop\Proyecto SIA\SistemaContable\SistemaContable\bin\Debug\ite
 C:\Users\Miguel\Desktop\Git SIA\SistemaContable\SistemaContable\bin\Debug\SistemaContable.exe.config
 C:\Users\Miguel\Desktop\Git SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.exe
 C:\Users\Miguel\Desktop\Git SIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.pdb
+C:\Users\Hugo\Documents\GitHub\ProyectoSIA\SistemaContable\SistemaContable\bin\Debug\SistemaContable.exe.config
+C:\Users\Hugo\Documents\GitHub\ProyectoSIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.pdb
