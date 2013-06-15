@@ -89,6 +89,7 @@
     <Compile Include="BaseDatos\AccesoEmpresas.cs" />
     <Compile Include="BaseDatos\AccesoEstadoResultados.cs" />
     <Compile Include="BaseDatos\AccesoMonedas.cs" />
+    <Compile Include="BaseDatos\AccesoSocios.cs" />
     <Compile Include="BaseDatos\AccesoUsuarios.cs" />
     <Compile Include="BaseDatos\SqlServer.cs" />
     <Compile Include="Interfaces\AsientosDiario.cs">
@@ -170,6 +171,7 @@
     <Compile Include="Logica\LogicaEmpresas.cs" />
     <Compile Include="Logica\LogicaEstadoResultados.cs" />
     <Compile Include="Logica\LogicaMonedas.cs" />
+    <Compile Include="Logica\LogicaSocios.cs" />
     <Compile Include="Logica\LogicaUsuarios.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
