@@ -14,6 +14,5 @@ namespace BibliotecasComunes
         public string TipoSocio { get; set; }
         public Cuenta Cuenta { get; set; }
         public Moneda Moneda { get; set; }
-		
     }
 }

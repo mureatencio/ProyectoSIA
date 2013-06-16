@@ -41,10 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Asiento.cs" />
+    <Compile Include="Compra.cs" />
     <Compile Include="Cuenta.cs" />
     <Compile Include="Empresa.cs" />
     <Compile Include="Estado.cs" />
     <Compile Include="Moneda.cs" />
+    <Compile Include="Proyecto.cs" />
+    <Compile Include="ServicioCompra.cs" />
     <Compile Include="Socio.cs" />
     <Compile Include="Padre.cs" />
     <Compile Include="Partida.cs" />

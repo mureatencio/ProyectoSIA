@@ -170,3 +170,4 @@ C:\Users\Hugo\Desktop\ProyectoSIA-Socios-de-negocios\SistemaContable\SistemaCont
 C:\Users\Hugo\Desktop\ProyectoSIA-Socios-de-negocios\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.VerAsiento.resources
 C:\Users\Hugo\Desktop\ProyectoSIA-Socios-de-negocios\SistemaContable\SistemaContable\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Hugo\Desktop\ProyectoSIA-Socios-de-negocios\SistemaContable\SistemaContable\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Hugo\Documents\GitHub\ProyectoSIA\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.exe
