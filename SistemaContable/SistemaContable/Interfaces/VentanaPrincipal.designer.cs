@@ -38,15 +38,18 @@
             this.aBalanceDeComprobaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estadoDeResultadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.balanceGeneralToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresarNuevoSocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verSocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblEmpresa = new System.Windows.Forms.Label();
             this.logoBox = new System.Windows.Forms.PictureBox();
             this.lblCedula = new System.Windows.Forms.Label();
             this.lblTel = new System.Windows.Forms.Label();
             this.lblF = new System.Windows.Forms.Label();
-            this.sociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ingresarNuevoSocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verSocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.proyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearProyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verProyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuVentanaPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +62,7 @@
             this.cierresContablesToolStripMenuItem,
             this.reportesToolStripMenuItem,
             this.sociosToolStripMenuItem,
+            this.proyectosToolStripMenuItem,
             this.configuraciónToolStripMenuItem});
             this.menuVentanaPrincipal.Location = new System.Drawing.Point(0, 0);
             this.menuVentanaPrincipal.Name = "menuVentanaPrincipal";
@@ -134,6 +138,29 @@
             this.balanceGeneralToolStripMenuItem.Text = "Balance general";
             this.balanceGeneralToolStripMenuItem.Click += new System.EventHandler(this.balanceGeneralToolStripMenuItem_Click);
             // 
+            // sociosToolStripMenuItem
+            // 
+            this.sociosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ingresarNuevoSocioToolStripMenuItem,
+            this.verSocioToolStripMenuItem});
+            this.sociosToolStripMenuItem.Name = "sociosToolStripMenuItem";
+            this.sociosToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.sociosToolStripMenuItem.Text = "Socios";
+            // 
+            // ingresarNuevoSocioToolStripMenuItem
+            // 
+            this.ingresarNuevoSocioToolStripMenuItem.Name = "ingresarNuevoSocioToolStripMenuItem";
+            this.ingresarNuevoSocioToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.ingresarNuevoSocioToolStripMenuItem.Text = "Ingresar Nuevo Socio";
+            this.ingresarNuevoSocioToolStripMenuItem.Click += new System.EventHandler(this.ingresarNuevoSocioToolStripMenuItem_Click);
+            // 
+            // verSocioToolStripMenuItem
+            // 
+            this.verSocioToolStripMenuItem.Name = "verSocioToolStripMenuItem";
+            this.verSocioToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.verSocioToolStripMenuItem.Text = "Ver Socio";
+            this.verSocioToolStripMenuItem.Click += new System.EventHandler(this.verSocioToolStripMenuItem_Click);
+            // 
             // configuraciónToolStripMenuItem
             // 
             this.configuraciónToolStripMenuItem.Name = "configuraciónToolStripMenuItem";
@@ -189,28 +216,28 @@
             this.lblF.TabIndex = 10;
             this.lblF.Text = "Fax: ";
             // 
-            // sociosToolStripMenuItem
+            // proyectosToolStripMenuItem
             // 
-            this.sociosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ingresarNuevoSocioToolStripMenuItem,
-            this.verSocioToolStripMenuItem});
-            this.sociosToolStripMenuItem.Name = "sociosToolStripMenuItem";
-            this.sociosToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.sociosToolStripMenuItem.Text = "Socios";
+            this.proyectosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.crearProyectoToolStripMenuItem,
+            this.verProyectosToolStripMenuItem});
+            this.proyectosToolStripMenuItem.Name = "proyectosToolStripMenuItem";
+            this.proyectosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.proyectosToolStripMenuItem.Text = "Proyectos";
             // 
-            // ingresarNuevoSocioToolStripMenuItem
+            // crearProyectoToolStripMenuItem
             // 
-            this.ingresarNuevoSocioToolStripMenuItem.Name = "ingresarNuevoSocioToolStripMenuItem";
-            this.ingresarNuevoSocioToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.ingresarNuevoSocioToolStripMenuItem.Text = "Ingresar Nuevo Socio";
-            this.ingresarNuevoSocioToolStripMenuItem.Click += new System.EventHandler(this.ingresarNuevoSocioToolStripMenuItem_Click);
+            this.crearProyectoToolStripMenuItem.Name = "crearProyectoToolStripMenuItem";
+            this.crearProyectoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.crearProyectoToolStripMenuItem.Text = "Crear Proyecto";
+            this.crearProyectoToolStripMenuItem.Click += new System.EventHandler(this.crearProyectoToolStripMenuItem_Click);
             // 
-            // verSocioToolStripMenuItem
+            // verProyectosToolStripMenuItem
             // 
-            this.verSocioToolStripMenuItem.Name = "verSocioToolStripMenuItem";
-            this.verSocioToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.verSocioToolStripMenuItem.Text = "Ver Socio";
-            this.verSocioToolStripMenuItem.Click += new System.EventHandler(this.verSocioToolStripMenuItem_Click);
+            this.verProyectosToolStripMenuItem.Name = "verProyectosToolStripMenuItem";
+            this.verProyectosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.verProyectosToolStripMenuItem.Text = "Ver Proyectos";
+            this.verProyectosToolStripMenuItem.Click += new System.EventHandler(this.verProyectosToolStripMenuItem_Click);
             // 
             // VentanaPrincipal
             // 
@@ -254,5 +281,8 @@
         private System.Windows.Forms.ToolStripMenuItem sociosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresarNuevoSocioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verSocioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem proyectosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem crearProyectoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verProyectosToolStripMenuItem;
     }
 }

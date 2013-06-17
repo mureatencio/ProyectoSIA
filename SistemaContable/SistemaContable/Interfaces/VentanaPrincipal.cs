@@ -108,5 +108,17 @@ namespace SistemaContable.Interfaces
             MuestraSocios ventanaversocios = new MuestraSocios(this.NombreEmpresa);
             ventanaversocios.ShowDialog();
         }
+
+        private void crearProyectoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CrearProyectos ventanacrearproyectos = new CrearProyectos(this.NombreEmpresa);
+            ventanacrearproyectos.ShowDialog();
+        }
+
+        private void verProyectosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VerProyectos ventanaverproyectos = new VerProyectos(this.NombreEmpresa);
+            ventanaverproyectos.ShowDialog();
+        }
     }
 }

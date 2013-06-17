@@ -13,3 +13,8 @@ C:\Users\Prueba\Desktop\ProyectoSIA-Socios-de-negocios\BibliotecaComun\bin\Debug
 C:\Users\Prueba\Desktop\ProyectoSIA-Socios-de-negocios\BibliotecaComun\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Prueba\Desktop\ProyectoSIA-Socios-de-negocios\BibliotecaComun\obj\Debug\BibliotecasComunes.dll
 C:\Users\Prueba\Desktop\ProyectoSIA-Socios-de-negocios\BibliotecaComun\obj\Debug\BibliotecasComunes.pdb
+C:\Users\Hugo\Documents\GitHub\ProyectoSIA\BibliotecaComun\bin\Debug\BibliotecasComunes.dll
+C:\Users\Hugo\Documents\GitHub\ProyectoSIA\BibliotecaComun\bin\Debug\BibliotecasComunes.pdb
+C:\Users\Hugo\Documents\GitHub\ProyectoSIA\BibliotecaComun\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Hugo\Documents\GitHub\ProyectoSIA\BibliotecaComun\obj\Debug\BibliotecasComunes.dll
+C:\Users\Hugo\Documents\GitHub\ProyectoSIA\BibliotecaComun\obj\Debug\BibliotecasComunes.pdb
