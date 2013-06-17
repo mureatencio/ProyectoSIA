@@ -91,6 +91,7 @@
     <Compile Include="BaseDatos\AccesoEstadoResultados.cs" />
     <Compile Include="BaseDatos\AccesoMonedas.cs" />
     <Compile Include="BaseDatos\AccesoProyectos.cs" />
+    <Compile Include="BaseDatos\AccesoServicios.cs" />
     <Compile Include="BaseDatos\AccesoSocios.cs" />
     <Compile Include="BaseDatos\AccesoUsuarios.cs" />
     <Compile Include="BaseDatos\SqlServer.cs" />
@@ -160,6 +161,12 @@
     <Compile Include="Interfaces\ReportesERBG.Designer.cs">
       <DependentUpon>ReportesERBG.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Servicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Servicios.Designer.cs">
+      <DependentUpon>Servicios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\VentanaBalanceGeneral.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,10 +194,16 @@
     <Compile Include="Logica\LogicaEstadoResultados.cs" />
     <Compile Include="Logica\LogicaMonedas.cs" />
     <Compile Include="Logica\LogicaProyectos.cs" />
+    <Compile Include="Logica\LogicaServicios.cs" />
     <Compile Include="Logica\LogicaSocios.cs" />
     <Compile Include="Logica\LogicaUsuarios.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\BalanceComprobacion.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -235,6 +248,9 @@
     <EmbeddedResource Include="Interfaces\ReportesERBG.resx">
       <DependentUpon>ReportesERBG.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Servicios.resx">
+      <DependentUpon>Servicios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\VentanaBalanceGeneral.resx">
       <DependentUpon>VentanaBalanceGeneral.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,6 +259,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\VerAsiento.resx">
       <DependentUpon>VerAsiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\BalanceComprobacion.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

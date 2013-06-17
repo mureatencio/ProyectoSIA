@@ -47,6 +47,7 @@
     <Compile Include="Estado.cs" />
     <Compile Include="Moneda.cs" />
     <Compile Include="Proyecto.cs" />
+    <Compile Include="Servicio.cs" />
     <Compile Include="ServicioCompra.cs" />
     <Compile Include="Socio.cs" />
     <Compile Include="Padre.cs" />
