@@ -182,5 +182,10 @@ namespace SistemaContable.Interfaces
         {
             this.Dispose();
         }
+
+        private void cmbCuenta_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

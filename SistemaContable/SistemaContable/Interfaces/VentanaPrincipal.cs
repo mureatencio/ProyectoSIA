@@ -114,5 +114,11 @@ namespace SistemaContable.Interfaces
             Servicios ventanaservicios = new Servicios(this.NombreEmpresa);
             ventanaservicios.ShowDialog();
         }
+
+        private void crearDocumentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Documentos ventanaDocumentos = new Documentos(this.NombreEmpresa);
+            ventanaDocumentos.ShowDialog();
+        }
     }
 }

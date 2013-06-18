@@ -64,6 +64,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -118,6 +120,12 @@
     <Compile Include="Interfaces\CuentaAsiento.designer.cs">
       <DependentUpon>CuentaAsiento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Documentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Documentos.Designer.cs">
+      <DependentUpon>Documentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\EditarCuentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +137,12 @@
     </Compile>
     <Compile Include="Interfaces\EstadoResultados.designer.cs">
       <DependentUpon>EstadoResultados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ExplorarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\ExplorarProductos.Designer.cs">
+      <DependentUpon>ExplorarProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\InsertarSocio.cs">
       <SubType>Form</SubType>
@@ -226,11 +240,17 @@
     <EmbeddedResource Include="Interfaces\CuentaAsiento.resx">
       <DependentUpon>CuentaAsiento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Documentos.resx">
+      <DependentUpon>Documentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\EditarCuentas.resx">
       <DependentUpon>EditarCuentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\EstadoResultados.resx">
       <DependentUpon>EstadoResultados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\ExplorarProductos.resx">
+      <DependentUpon>ExplorarProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\InsertarSocio.resx">
       <DependentUpon>InsertarSocio.cs</DependentUpon>

@@ -22,6 +22,20 @@ namespace SistemaContable.Logica
             }
         }
 
+        public static List<Servicio> cargarServicios(string nombre)
+        {
+            List<Servicio> servicios = new List<Servicio>();
+            try
+            {
+                servicios = AccesoServicios.obtenerServicios(new object[] { nombre, "" });
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return servicios;
+        }
+
         public static void insertarImagen(string pCodigo, byte[] pImagen)
         {
             try
@@ -33,6 +47,21 @@ namespace SistemaContable.Logica
                 throw new Exception(ex.Message);
             }
         }
+
+        public static List<String> obtenerNombreServicios(string empresa)
+        {
+            List<String> servicios = new List<String>();
+            try
+            {
+                servicios = AccesoServicios.obtenerNombresServicios(new object[] { empresa, "" });
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return servicios;
+        }
+
 
     }
 }

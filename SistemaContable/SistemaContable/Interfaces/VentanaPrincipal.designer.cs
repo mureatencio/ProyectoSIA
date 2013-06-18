@@ -42,13 +42,15 @@
             this.ingresarNuevoSocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verSocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarServicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblEmpresa = new System.Windows.Forms.Label();
             this.logoBox = new System.Windows.Forms.PictureBox();
             this.lblCedula = new System.Windows.Forms.Label();
             this.lblTel = new System.Windows.Forms.Label();
             this.lblF = new System.Windows.Forms.Label();
-            this.serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarServicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.documentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearDocumentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuVentanaPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox)).BeginInit();
             this.SuspendLayout();
@@ -62,7 +64,8 @@
             this.reportesToolStripMenuItem,
             this.sociosToolStripMenuItem,
             this.configuraciónToolStripMenuItem,
-            this.serviciosToolStripMenuItem});
+            this.serviciosToolStripMenuItem,
+            this.documentosToolStripMenuItem});
             this.menuVentanaPrincipal.Location = new System.Drawing.Point(0, 0);
             this.menuVentanaPrincipal.Name = "menuVentanaPrincipal";
             this.menuVentanaPrincipal.Size = new System.Drawing.Size(720, 24);
@@ -167,6 +170,21 @@
             this.configuraciónToolStripMenuItem.Text = "Configuración";
             this.configuraciónToolStripMenuItem.Click += new System.EventHandler(this.configuraciónToolStripMenuItem_Click);
             // 
+            // serviciosToolStripMenuItem
+            // 
+            this.serviciosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarServicioToolStripMenuItem});
+            this.serviciosToolStripMenuItem.Name = "serviciosToolStripMenuItem";
+            this.serviciosToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.serviciosToolStripMenuItem.Text = "Servicios";
+            // 
+            // agregarServicioToolStripMenuItem
+            // 
+            this.agregarServicioToolStripMenuItem.Name = "agregarServicioToolStripMenuItem";
+            this.agregarServicioToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.agregarServicioToolStripMenuItem.Text = "Agregar Servicio";
+            this.agregarServicioToolStripMenuItem.Click += new System.EventHandler(this.agregarServicioToolStripMenuItem_Click);
+            // 
             // lblEmpresa
             // 
             this.lblEmpresa.AutoSize = true;
@@ -215,20 +233,20 @@
             this.lblF.TabIndex = 10;
             this.lblF.Text = "Fax: ";
             // 
-            // serviciosToolStripMenuItem
+            // documentosToolStripMenuItem
             // 
-            this.serviciosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.agregarServicioToolStripMenuItem});
-            this.serviciosToolStripMenuItem.Name = "serviciosToolStripMenuItem";
-            this.serviciosToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.serviciosToolStripMenuItem.Text = "Servicios";
+            this.documentosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.crearDocumentoToolStripMenuItem});
+            this.documentosToolStripMenuItem.Name = "documentosToolStripMenuItem";
+            this.documentosToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.documentosToolStripMenuItem.Text = "Documentos";
             // 
-            // agregarServicioToolStripMenuItem
+            // crearDocumentoToolStripMenuItem
             // 
-            this.agregarServicioToolStripMenuItem.Name = "agregarServicioToolStripMenuItem";
-            this.agregarServicioToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.agregarServicioToolStripMenuItem.Text = "Agregar Servicio";
-            this.agregarServicioToolStripMenuItem.Click += new System.EventHandler(this.agregarServicioToolStripMenuItem_Click);
+            this.crearDocumentoToolStripMenuItem.Name = "crearDocumentoToolStripMenuItem";
+            this.crearDocumentoToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.crearDocumentoToolStripMenuItem.Text = "Crear Documento";
+            this.crearDocumentoToolStripMenuItem.Click += new System.EventHandler(this.crearDocumentoToolStripMenuItem_Click);
             // 
             // VentanaPrincipal
             // 
@@ -274,5 +292,7 @@
         private System.Windows.Forms.ToolStripMenuItem verSocioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem serviciosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agregarServicioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem documentosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem crearDocumentoToolStripMenuItem;
     }
 }
