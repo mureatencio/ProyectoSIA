@@ -108,5 +108,11 @@ namespace SistemaContable.Interfaces
             MuestraSocios ventanaversocios = new MuestraSocios(this.NombreEmpresa);
             ventanaversocios.ShowDialog();
         }
+
+        private void agregarServicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Servicios ventanaservicios = new Servicios(this.NombreEmpresa);
+            ventanaservicios.ShowDialog();
+        }
     }
 }

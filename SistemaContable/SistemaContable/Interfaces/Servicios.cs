@@ -90,7 +90,7 @@ namespace SistemaContable.Interfaces
             }
 
             MessageBox.Show("El artículo de tipo servicio ha sido insertado", "Información", MessageBoxButtons.OK);
-               
+            this.Dispose();   
 
 
         }

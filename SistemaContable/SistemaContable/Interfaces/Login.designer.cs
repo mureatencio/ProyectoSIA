@@ -88,6 +88,7 @@
             this.textBoxContrasena.PasswordChar = '*';
             this.textBoxContrasena.Size = new System.Drawing.Size(198, 20);
             this.textBoxContrasena.TabIndex = 4;
+            this.textBoxContrasena.Text = "prueba";
             // 
             // textBoxUsuario
             // 
@@ -95,6 +96,7 @@
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(198, 20);
             this.textBoxUsuario.TabIndex = 3;
+            this.textBoxUsuario.Text = "prueba";
             // 
             // label2
             // 
