@@ -25,10 +25,10 @@ namespace SistemaContable.BaseDatos
                     {
                         Servicio servicio = new Servicio();
                         servicio.Nombre = dataReader["Nombre"].ToString();
-                        servicio.Codigo = dataReader["Codigo"].ToString();
+                        servicio.Codigo = dataReader["CodigoUnico"].ToString();
                         servicio.Descripcion = dataReader["Descripcion"].ToString();
+                        servicio.Comentario = dataReader["Comentario"].ToString();
                         servicio.Unidad = dataReader["Unidad"].ToString();
-                        servicio.Codigo = dataReader["Codigo"].ToString();
                         servicio.Precio = double.Parse(dataReader["Precio"].ToString());
                         servicios.Add(servicio);
                     }

@@ -54,8 +54,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.buttonAgregarArticulo = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.labelCodigo = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.buttonAgregarProducto = new System.Windows.Forms.Button();
             this.textBoxComentarios = new System.Windows.Forms.TextBox();
@@ -145,7 +145,8 @@
             this.dataGridViewDocumento.Name = "dataGridViewDocumento";
             this.dataGridViewDocumento.Size = new System.Drawing.Size(593, 194);
             this.dataGridViewDocumento.TabIndex = 0;
-            this.dataGridViewDocumento.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridViewDocumento.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDocumento_CellClick);
+            this.dataGridViewDocumento.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDocumento_CellValueChanged);
             // 
             // ColumnCodigo
             // 
@@ -202,7 +203,6 @@
             this.label4.Size = new System.Drawing.Size(85, 13);
             this.label4.TabIndex = 5;
             this.label4.Text = "Total Impuestos:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -255,6 +255,7 @@
             this.comboBoxSocio.Name = "comboBoxSocio";
             this.comboBoxSocio.Size = new System.Drawing.Size(121, 21);
             this.comboBoxSocio.TabIndex = 8;
+            this.comboBoxSocio.SelectedIndexChanged += new System.EventHandler(this.comboBoxSocio_SelectedIndexChanged);
             // 
             // dateTimePickerFecha
             // 
@@ -279,8 +280,9 @@
             this.comboBoxProyecto.FormattingEnabled = true;
             this.comboBoxProyecto.Location = new System.Drawing.Point(317, 41);
             this.comboBoxProyecto.Name = "comboBoxProyecto";
-            this.comboBoxProyecto.Size = new System.Drawing.Size(113, 21);
+            this.comboBoxProyecto.Size = new System.Drawing.Size(191, 21);
             this.comboBoxProyecto.TabIndex = 13;
+            this.comboBoxProyecto.SelectedIndexChanged += new System.EventHandler(this.comboBoxProyecto_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -309,18 +311,9 @@
             this.comboBox5.Size = new System.Drawing.Size(79, 21);
             this.comboBox5.TabIndex = 17;
             // 
-            // buttonAgregarArticulo
-            // 
-            this.buttonAgregarArticulo.Location = new System.Drawing.Point(466, 41);
-            this.buttonAgregarArticulo.Name = "buttonAgregarArticulo";
-            this.buttonAgregarArticulo.Size = new System.Drawing.Size(98, 23);
-            this.buttonAgregarArticulo.TabIndex = 18;
-            this.buttonAgregarArticulo.Text = "Agregar articulo";
-            this.buttonAgregarArticulo.UseVisualStyleBackColor = true;
-            this.buttonAgregarArticulo.Click += new System.EventHandler(this.buttonAgregarArticulo_Click);
-            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.labelCodigo);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.buttonAgregarProducto);
             this.groupBox2.Controls.Add(this.textBoxComentarios);
@@ -343,6 +336,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Agregar Producto";
             // 
+            // labelCodigo
+            // 
+            this.labelCodigo.AutoSize = true;
+            this.labelCodigo.Location = new System.Drawing.Point(156, 52);
+            this.labelCodigo.Name = "labelCodigo";
+            this.labelCodigo.Size = new System.Drawing.Size(62, 13);
+            this.labelCodigo.TabIndex = 32;
+            this.labelCodigo.Text = "CodigoProd";
+            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(444, 262);
@@ -360,7 +362,7 @@
             this.buttonAgregarProducto.TabIndex = 30;
             this.buttonAgregarProducto.Text = "Agregar";
             this.buttonAgregarProducto.UseVisualStyleBackColor = true;
-            this.buttonAgregarProducto.Click += new System.EventHandler(this.button4_Click);
+            this.buttonAgregarProducto.Click += new System.EventHandler(this.buttonAgregarProducto_Click);
             // 
             // textBoxComentarios
             // 
@@ -485,7 +487,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(941, 417);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.buttonAgregarArticulo);
             this.Controls.Add(this.comboBox5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -539,7 +540,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnImpuestos;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTotalLinea;
         private System.Windows.Forms.DataGridViewButtonColumn ColumnEliminar;
-        private System.Windows.Forms.Button buttonAgregarArticulo;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button buttonAgregarProducto;
@@ -556,5 +556,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox comboBoxAgregarProducto;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label labelCodigo;
     }
 }

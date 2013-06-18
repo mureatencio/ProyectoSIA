@@ -9,6 +9,33 @@ namespace SistemaContable.BaseDatos
 {
     public static class AccesoSocios
     {
+        public static List<string> obtenerNombresSocios(object[] pArgumentos)
+        {
+            List<string> resultado = new List<string>();
+
+            SqlDataReader dataReader = null;
+            try
+            {
+                dataReader = SqlServer.Instance.traerDataReader("cargarNombresSocios", pArgumentos);
+                if (dataReader.HasRows)
+                {
+                    while (dataReader.Read())
+                    {
+                        resultado.Add(dataReader[0].ToString());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                SqlServer.Instance.CerrarConexion();
+            }
+            return resultado;
+        }
+
         public static List<Socio> obtenerSocios(object[] pArgumentos)
         {
             List<Socio> resultado = new List<Socio>();

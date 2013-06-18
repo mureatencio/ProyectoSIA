@@ -9,6 +9,33 @@ namespace SistemaContable.BaseDatos
 {
     public static class AccesoProyectos
     {
+        public static List<string> obtenerNombreProyectos(object[] pArgumentos)
+        {
+            List<string> resultado = new List<string>();
+
+            SqlDataReader dataReader = null;
+            try
+            {
+                dataReader = SqlServer.Instance.traerDataReader("cargarNombresProyectos", pArgumentos);
+                if (dataReader.HasRows)
+                {
+                    while (dataReader.Read())
+                    {
+                         resultado.Add(dataReader[0].ToString());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                SqlServer.Instance.CerrarConexion();
+            }
+            return resultado;
+        }
+
         public static List<Proyecto> obtenerProyectos(object[] pArgumentos)
         {
             List<Proyecto> resultado = new List<Proyecto>();

@@ -9,6 +9,21 @@ namespace SistemaContable.Logica
 {
     public static class LogicaSocios
     {
+        public static List<string> obtenerNombreSocios(string pEmpresa)
+        {
+            List<string> resultado = new List<string>();
+            try
+            {
+                object[] pArgumentos = new object[] {pEmpresa };
+                resultado = AccesoSocios.obtenerNombresSocios(pArgumentos);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return resultado;
+        }
+
         public static List<Socio> obtenerSocios(string pEmpresa)
         {
             try
