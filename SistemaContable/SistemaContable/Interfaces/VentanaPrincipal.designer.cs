@@ -42,13 +42,16 @@
             this.ingresarNuevoSocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verSocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarServicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblEmpresa = new System.Windows.Forms.Label();
             this.logoBox = new System.Windows.Forms.PictureBox();
             this.lblCedula = new System.Windows.Forms.Label();
             this.lblTel = new System.Windows.Forms.Label();
             this.lblF = new System.Windows.Forms.Label();
-            this.serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarServicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.proyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarProyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verProyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuVentanaPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox)).BeginInit();
             this.SuspendLayout();
@@ -61,8 +64,9 @@
             this.cierresContablesToolStripMenuItem,
             this.reportesToolStripMenuItem,
             this.sociosToolStripMenuItem,
-            this.configuraciónToolStripMenuItem,
-            this.serviciosToolStripMenuItem});
+            this.proyectosToolStripMenuItem,
+            this.serviciosToolStripMenuItem,
+            this.configuraciónToolStripMenuItem});
             this.menuVentanaPrincipal.Location = new System.Drawing.Point(0, 0);
             this.menuVentanaPrincipal.Name = "menuVentanaPrincipal";
             this.menuVentanaPrincipal.Size = new System.Drawing.Size(720, 24);
@@ -167,6 +171,21 @@
             this.configuraciónToolStripMenuItem.Text = "Configuración";
             this.configuraciónToolStripMenuItem.Click += new System.EventHandler(this.configuraciónToolStripMenuItem_Click);
             // 
+            // serviciosToolStripMenuItem
+            // 
+            this.serviciosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarServicioToolStripMenuItem});
+            this.serviciosToolStripMenuItem.Name = "serviciosToolStripMenuItem";
+            this.serviciosToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.serviciosToolStripMenuItem.Text = "Servicios";
+            // 
+            // agregarServicioToolStripMenuItem
+            // 
+            this.agregarServicioToolStripMenuItem.Name = "agregarServicioToolStripMenuItem";
+            this.agregarServicioToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.agregarServicioToolStripMenuItem.Text = "Agregar Servicio";
+            this.agregarServicioToolStripMenuItem.Click += new System.EventHandler(this.agregarServicioToolStripMenuItem_Click);
+            // 
             // lblEmpresa
             // 
             this.lblEmpresa.AutoSize = true;
@@ -215,20 +234,28 @@
             this.lblF.TabIndex = 10;
             this.lblF.Text = "Fax: ";
             // 
-            // serviciosToolStripMenuItem
+            // proyectosToolStripMenuItem
             // 
-            this.serviciosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.agregarServicioToolStripMenuItem});
-            this.serviciosToolStripMenuItem.Name = "serviciosToolStripMenuItem";
-            this.serviciosToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.serviciosToolStripMenuItem.Text = "Servicios";
+            this.proyectosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarProyectosToolStripMenuItem,
+            this.verProyectosToolStripMenuItem});
+            this.proyectosToolStripMenuItem.Name = "proyectosToolStripMenuItem";
+            this.proyectosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.proyectosToolStripMenuItem.Text = "Proyectos";
             // 
-            // agregarServicioToolStripMenuItem
+            // agregarProyectosToolStripMenuItem
             // 
-            this.agregarServicioToolStripMenuItem.Name = "agregarServicioToolStripMenuItem";
-            this.agregarServicioToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.agregarServicioToolStripMenuItem.Text = "Agregar Servicio";
-            this.agregarServicioToolStripMenuItem.Click += new System.EventHandler(this.agregarServicioToolStripMenuItem_Click);
+            this.agregarProyectosToolStripMenuItem.Name = "agregarProyectosToolStripMenuItem";
+            this.agregarProyectosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.agregarProyectosToolStripMenuItem.Text = "Agregar Proyectos";
+            this.agregarProyectosToolStripMenuItem.Click += new System.EventHandler(this.agregarProyectosToolStripMenuItem_Click);
+            // 
+            // verProyectosToolStripMenuItem
+            // 
+            this.verProyectosToolStripMenuItem.Name = "verProyectosToolStripMenuItem";
+            this.verProyectosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.verProyectosToolStripMenuItem.Text = "Ver Proyectos";
+            this.verProyectosToolStripMenuItem.Click += new System.EventHandler(this.verProyectosToolStripMenuItem_Click);
             // 
             // VentanaPrincipal
             // 
@@ -274,5 +301,8 @@
         private System.Windows.Forms.ToolStripMenuItem verSocioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem serviciosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agregarServicioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem proyectosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agregarProyectosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verProyectosToolStripMenuItem;
     }
 }

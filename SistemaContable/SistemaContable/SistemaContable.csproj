@@ -112,6 +112,12 @@
     <Compile Include="Interfaces\ControlPanel.designer.cs">
       <DependentUpon>ControlPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\CrearProyectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\CrearProyectos.Designer.cs">
+      <DependentUpon>CrearProyectos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\CuentaAsiento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +190,12 @@
     <Compile Include="Interfaces\VerAsiento.designer.cs">
       <DependentUpon>VerAsiento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\VerProyectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\VerProyectos.Designer.cs">
+      <DependentUpon>VerProyectos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Logica\LogicaAsientos.cs" />
     <Compile Include="Logica\LogicaBalance.cs" />
     <Compile Include="Logica\LogicaCierre.cs" />
@@ -223,6 +235,9 @@
     <EmbeddedResource Include="Interfaces\ControlPanel.resx">
       <DependentUpon>ControlPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\CrearProyectos.resx">
+      <DependentUpon>CrearProyectos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\CuentaAsiento.resx">
       <DependentUpon>CuentaAsiento.cs</DependentUpon>
     </EmbeddedResource>
@@ -258,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\VerAsiento.resx">
       <DependentUpon>VerAsiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\VerProyectos.resx">
+      <DependentUpon>VerProyectos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
