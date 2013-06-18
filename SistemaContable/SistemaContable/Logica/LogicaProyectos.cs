@@ -29,7 +29,7 @@ namespace SistemaContable.Logica
             try
             {
                 object[] pArgumentos = new object[] {pNombreEmpresa, pNombreProyecto, pCodigoProyecto, pDescripcionProyecto };
-                AccesoAsientos.obtenerPartidas(pArgumentos);
+                AccesoProyectos.insertarProyecto(pArgumentos);
             }
             catch (Exception ex)
             {

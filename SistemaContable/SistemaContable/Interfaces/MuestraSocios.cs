@@ -33,9 +33,9 @@ namespace SistemaContable.Interfaces
                     dtgrdSocios[0, i].Value = socios[i].Codigo;
                     dtgrdSocios[1, i].Value = socios[i].Nombre;
                     dtgrdSocios[2, i].Value = socios[i].TipoSocio;
-                    dtgrdSocios[3, i].Value = socios[i].LimiteLocal.ToString();
-                    dtgrdSocios[4, i].Value = socios[i].Cuenta.CodigoCuenta;
-                    dtgrdSocios[5, i].Value = socios[i].Cuenta.SaldoLocal.ToString();
+                    dtgrdSocios[3, i].Value = socios[i].Cuenta.Nombre;
+                    dtgrdSocios[4, i].Value = socios[i].Cuenta.SaldoLocal.ToString();
+                    dtgrdSocios[5, i].Value = socios[i].LimiteLocal.ToString();
                     dtgrdSocios[6, i].Value = socios[i].Moneda.Codigo;
                     dtgrdSocios[7, i].Value = socios[i].CondicionPago.ToString();
                 }
