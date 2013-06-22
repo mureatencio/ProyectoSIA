@@ -51,7 +51,7 @@
             this.dateTimePickerFecha = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBoxProyecto = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonCrear = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -71,6 +71,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.comboBoxAgregarProducto = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumento)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -284,15 +285,15 @@
             this.comboBoxProyecto.TabIndex = 13;
             this.comboBoxProyecto.SelectedIndexChanged += new System.EventHandler(this.comboBoxProyecto_SelectedIndexChanged);
             // 
-            // button1
+            // buttonCrear
             // 
-            this.button1.Location = new System.Drawing.Point(503, 382);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Crear documento";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonCrear.Location = new System.Drawing.Point(503, 382);
+            this.buttonCrear.Name = "buttonCrear";
+            this.buttonCrear.Size = new System.Drawing.Size(117, 23);
+            this.buttonCrear.TabIndex = 15;
+            this.buttonCrear.Text = "Crear documento";
+            this.buttonCrear.UseVisualStyleBackColor = true;
+            this.buttonCrear.Click += new System.EventHandler(this.buttonCrear_Click);
             // 
             // button2
             // 
@@ -313,6 +314,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.labelCodigo);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.buttonAgregarProducto);
@@ -331,7 +333,7 @@
             this.groupBox2.Controls.Add(this.pictureBox1);
             this.groupBox2.Location = new System.Drawing.Point(646, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(279, 347);
+            this.groupBox2.Size = new System.Drawing.Size(279, 334);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Agregar Producto";
@@ -339,7 +341,7 @@
             // labelCodigo
             // 
             this.labelCodigo.AutoSize = true;
-            this.labelCodigo.Location = new System.Drawing.Point(156, 52);
+            this.labelCodigo.Location = new System.Drawing.Point(211, 52);
             this.labelCodigo.Name = "labelCodigo";
             this.labelCodigo.Size = new System.Drawing.Size(62, 13);
             this.labelCodigo.TabIndex = 32;
@@ -421,7 +423,7 @@
             // labelNombre
             // 
             this.labelNombre.AutoSize = true;
-            this.labelNombre.Location = new System.Drawing.Point(84, 52);
+            this.labelNombre.Location = new System.Drawing.Point(81, 52);
             this.labelNombre.Name = "labelNombre";
             this.labelNombre.Size = new System.Drawing.Size(66, 13);
             this.labelNombre.TabIndex = 23;
@@ -481,6 +483,15 @@
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(166, 52);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(43, 13);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Código:";
+            // 
             // Documentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -489,7 +500,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.comboBox5);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonCrear);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.comboBoxProyecto);
             this.Controls.Add(this.dateTimePickerFecha);
@@ -530,7 +541,7 @@
         private System.Windows.Forms.Label labelTotal;
         private System.Windows.Forms.Label labelTotalArticulos;
         private System.Windows.Forms.Label labelTotalImpuesto;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonCrear;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCodigo;
@@ -557,5 +568,6 @@
         private System.Windows.Forms.ComboBox comboBoxAgregarProducto;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelCodigo;
+        private System.Windows.Forms.Label label7;
     }
 }

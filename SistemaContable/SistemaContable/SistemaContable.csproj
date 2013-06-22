@@ -88,6 +88,7 @@
     <Compile Include="BaseDatos\AccesoCompras.cs" />
     <Compile Include="BaseDatos\AccesoCuentas.cs" />
     <Compile Include="BaseDatos\AccesoDatos.cs" />
+    <Compile Include="BaseDatos\AccesoDocumento.cs" />
     <Compile Include="BaseDatos\AccesoEmpresas.cs" />
     <Compile Include="BaseDatos\AccesoEstadoResultados.cs" />
     <Compile Include="BaseDatos\AccesoMonedas.cs" />
@@ -203,6 +204,7 @@
     <Compile Include="Logica\LogicaCierre.cs" />
     <Compile Include="Logica\LogicaCompras.cs" />
     <Compile Include="Logica\LogicaCuentas.cs" />
+    <Compile Include="Logica\LogicaDocumento.cs" />
     <Compile Include="Logica\LogicaEmpresas.cs" />
     <Compile Include="Logica\LogicaEstadoResultados.cs" />
     <Compile Include="Logica\LogicaMonedas.cs" />

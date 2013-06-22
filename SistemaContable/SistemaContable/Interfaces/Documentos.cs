@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Windows.Forms;
 using BibliotecasComunes;
 using SistemaContable.Logica;
@@ -18,7 +19,8 @@ namespace SistemaContable.Interfaces
         private List<string> listaProductos;
         private List<string> listaProyectos;
         private List<string> listaSocios;
-        private string[] listaTiposDocumento = {"Factura", "Orden Venta", "Nota Credito"};
+        private List<Image> listaImagenes;
+        private string[] listaTiposDocumento = {"Factura de clientes", "Orden de Venta", "Notas de credito venta"};
         private Servicio seleccionadoActual;
         public string codigoInserción;
         public string empresa;
@@ -33,6 +35,19 @@ namespace SistemaContable.Interfaces
             this.comboBoxAgregarProducto.ValueMember = "ID";
             this.comboBoxAgregarProducto.SelectedText = "Nombre";
             this.comboBoxAgregarProducto.DataSource = this.listaProductos;
+
+            string seleccionado = Convert.ToString(comboBoxAgregarProducto.SelectedItem);
+
+            this.listaServicio = LogicaServicios.cargarServicios(seleccionado);
+            seleccionadoActual = listaServicio[0];
+            this.labelNombre.Text = seleccionadoActual.Nombre;
+            this.labelCodigo.Text = seleccionadoActual.Codigo;
+            this.textBoxDescripcion.Text = seleccionadoActual.Descripcion;
+            this.textBoxComentarios.Text = seleccionadoActual.Comentario;
+            this.labelPrecioProd.Text = Convert.ToString(seleccionadoActual.Precio);
+            this.labelUnidad.Text = seleccionadoActual.Unidad;
+           // this.listaImagenes = LogicaServicios.cargarImagenes(seleccionadoActual.Codigo, empresa);
+            //this.pictureBox1.Image = listaImagenes[0];
 
             this.listaSocios = LogicaSocios.obtenerNombreSocios(empresa);
             this.comboBoxSocio.DisplayMember = "Nombre";
@@ -53,12 +68,14 @@ namespace SistemaContable.Interfaces
             
         }
 
-        private void labelTotalImpuesto_Click(object sender, EventArgs e)
+        public Image byteArrayToImage(byte[] byteArrayIn)
         {
-
+            MemoryStream ms = new MemoryStream(byteArrayIn);
+            Image returnImage = Image.FromStream(ms);
+            return returnImage;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void labelTotalImpuesto_Click(object sender, EventArgs e)
         {
 
         }
@@ -95,13 +112,24 @@ namespace SistemaContable.Interfaces
 
         private void dataGridViewDocumento_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
+            
+            
             if (dataGridViewDocumento.Rows.Count > 1)
             {
                 int filaActual = e.RowIndex;
                 if (e.ColumnIndex == 2)
                 {
-                    this.dataGridViewDocumento[5, filaActual].Value = Convert.ToString((Convert.ToDouble(this.dataGridViewDocumento[3, filaActual].Value) * Convert.ToDouble(this.dataGridViewDocumento[2, filaActual].Value))+((Convert.ToDouble(this.dataGridViewDocumento[3, filaActual].Value) * Convert.ToDouble(this.dataGridViewDocumento[2, filaActual].Value))*0.13));
-                    this.dataGridViewDocumento[4, filaActual].Value = Convert.ToString((Convert.ToDouble(this.dataGridViewDocumento[3, filaActual].Value) * Convert.ToDouble(this.dataGridViewDocumento[2, filaActual].Value))*0.13);
+                    try
+                    {
+                        this.dataGridViewDocumento[5, filaActual].Value = Convert.ToString((Convert.ToDouble(this.dataGridViewDocumento[3, filaActual].Value) * Convert.ToDouble(this.dataGridViewDocumento[2, filaActual].Value)) + ((Convert.ToDouble(this.dataGridViewDocumento[3, filaActual].Value) * Convert.ToDouble(this.dataGridViewDocumento[2, filaActual].Value)) * 0.13));
+                        this.dataGridViewDocumento[4, filaActual].Value = Convert.ToString((Convert.ToDouble(this.dataGridViewDocumento[3, filaActual].Value) * Convert.ToDouble(this.dataGridViewDocumento[2, filaActual].Value)) * 0.13);
+                        double result = Convert.ToDouble(this.dataGridViewDocumento[2, filaActual].Value);
+                    }
+                    catch (FormatException)
+                    {
+                        MessageBox.Show("La cantidad no es valida", "Información", MessageBoxButtons.OK);
+                        this.dataGridViewDocumento[2, filaActual].Value = 0;
+                    }   
                 }
 
             }
@@ -150,8 +178,50 @@ namespace SistemaContable.Interfaces
             this.comboBoxProyecto.ValueMember = "ID";
             this.comboBoxProyecto.SelectedText = "Nombre";
             this.comboBoxProyecto.DataSource = this.listaProyectos;
+        }
 
-          
+        private void buttonCrear_Click(object sender, EventArgs e)
+        {
+            if (comboBoxProyecto.SelectedValue == null || comboBoxSocio.SelectedValue == null)
+            {
+                MessageBox.Show("Los datos que intentan insertar están incorrectos", "Advertencia", MessageBoxButtons.OK);
+           
+            }
+            else
+            {
+
+                string nombreMonedaLocal = LogicaEmpresas.obtenerMonedaLocalEmpresa(empresa);
+                Documento nuevoDocumento = new Documento();
+
+                nuevoDocumento.tipo = this.comboBoxTipo.SelectedValue.ToString();
+                nuevoDocumento.fechaContabilizacion = this.dateTimePickerFecha.Value;
+                nuevoDocumento.socio = this.comboBoxSocio.SelectedValue.ToString();
+                nuevoDocumento.proyecto = this.comboBoxProyecto.SelectedValue.ToString();
+                nuevoDocumento.impuesto = Convert.ToDouble(this.labelTotalImpuesto.Text);
+                nuevoDocumento.totalPrecio = Convert.ToDouble(this.labelTotalArticulos.Text);
+                nuevoDocumento.total = Convert.ToDouble(this.labelTotal.Text);
+                nuevoDocumento.moneda = nombreMonedaLocal;
+                nuevoDocumento.numero = 1;
+
+                int codigoUnico = LogicaDocumento.insertarDocumento(nuevoDocumento);
+
+                Linea nuevaLinea = new Linea();
+                for (int i = 0; i < dataGridViewDocumento.Rows.Count-1;i++ )
+                {
+
+                    nuevaLinea.articuloCodigo = Convert.ToString(this.dataGridViewDocumento[0, i].Value);
+                    nuevaLinea.Cantidad = Convert.ToDouble(this.dataGridViewDocumento[2, i].Value);
+                    nuevaLinea.Impuesto = Convert.ToDouble(this.dataGridViewDocumento[4, i].Value);
+                    nuevaLinea.Total = Convert.ToDouble(this.dataGridViewDocumento[2, i].Value) * Convert.ToDouble(this.dataGridViewDocumento[3, i].Value);
+                    nuevaLinea.TotalGeneral = Convert.ToDouble(this.dataGridViewDocumento[5, i].Value);
+                    nuevaLinea.documento = codigoUnico;
+
+                    LogicaDocumento.insertarLinea(nuevaLinea);
+
+                }
+
+                MessageBox.Show("El documento fue insertado", "Información", MessageBoxButtons.OK);
+            }
         }
 
 

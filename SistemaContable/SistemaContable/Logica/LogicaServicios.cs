@@ -4,12 +4,28 @@ using System.Linq;
 using System.Text;
 using BibliotecasComunes;
 using SistemaContable.BaseDatos;
+using System.Drawing;
 
 namespace SistemaContable.Logica
 {
     class LogicaServicios
     {
 
+        public static List<Image> cargarImagenes(string pCodigoArticulo, string pNombreEmpresa)
+        {
+            List<Image> imagenes = new List<Image>();
+            try
+            {
+                imagenes = AccesoServicios.obtenerImagenes(new object[] { pNombreEmpresa, pCodigoArticulo });
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return imagenes;
+        }
+
+        
         public static void insertarServicio(Servicio pservicio, string pNombreEmpresa)
         {
             try

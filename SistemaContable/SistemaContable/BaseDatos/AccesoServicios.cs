@@ -2,14 +2,65 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 using BibliotecasComunes;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace SistemaContable.BaseDatos
 {
     class AccesoServicios
     {
 
+        public static List<Image> obtenerImagenes(object[] pArgumentos)
+        {
+            
+            List<Image> imagenes = new List<Image>();
+
+            SqlDataReader dataReader = null;
+            try
+            {
+                dataReader = SqlServer.Instance.traerDataReader("cargarImagenes", pArgumentos);
+                if (dataReader.HasRows)
+                {
+                    while (dataReader.Read())
+                    {
+                        Image imagen;
+                        imagen = byteArrayToImage(ObjectToByteArray(dataReader["Foto"]));
+
+                        imagenes.Add(imagen);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                SqlServer.Instance.cerrarDataReader(dataReader);
+                SqlServer.Instance.CerrarConexion();
+            }
+            return imagenes;
+        }
+
+        private static byte[] ObjectToByteArray(Object obj)
+        {
+            if (obj == null)
+                return null;
+            BinaryFormatter bf = new BinaryFormatter();
+            MemoryStream ms = new MemoryStream();
+            bf.Serialize(ms, obj);
+            return ms.ToArray();
+        }
+
+        public static Image byteArrayToImage(byte[] byteArrayIn)
+        {
+            MemoryStream ms = new MemoryStream(byteArrayIn);
+            Image returnImage = Image.FromStream(ms);
+            return returnImage;
+        }
 
         public static List<Servicio> obtenerServicios(object[] pArgumentos)
         {
@@ -108,6 +159,8 @@ namespace SistemaContable.BaseDatos
                 SqlServer.Instance.CerrarConexion();
             }
         }
+
+
 
         
     }

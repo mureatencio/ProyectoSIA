@@ -39,3 +39,11 @@ C:\Users\Miguel\Documents\Git\SistemaContable\ClienteBancoCentral\ClienteBancoCe
 C:\Users\Miguel\Documents\Git\SistemaContable\ClienteBancoCentral\ClienteBancoCentral\obj\Debug\ClienteBancoCentral.csprojResolveAssemblyReference.cache
 C:\Users\Miguel\Documents\Git\SistemaContable\ClienteBancoCentral\ClienteBancoCentral\obj\Debug\ClienteBancoCentral.dll
 C:\Users\Miguel\Documents\Git\SistemaContable\ClienteBancoCentral\ClienteBancoCentral\obj\Debug\ClienteBancoCentral.pdb
+C:\Users\Public\Documents\Git\SistemaContable\ClienteBancoCentral\ClienteBancoCentral\bin\Debug\ClienteBancoCentral.dll.config
+C:\Users\Public\Documents\Git\SistemaContable\ClienteBancoCentral\ClienteBancoCentral\bin\Debug\ClienteBancoCentral.dll
+C:\Users\Public\Documents\Git\SistemaContable\ClienteBancoCentral\ClienteBancoCentral\bin\Debug\ClienteBancoCentral.pdb
+C:\Users\Public\Documents\Git\SistemaContable\ClienteBancoCentral\ClienteBancoCentral\bin\Debug\BibliotecasComunes.dll
+C:\Users\Public\Documents\Git\SistemaContable\ClienteBancoCentral\ClienteBancoCentral\bin\Debug\BibliotecasComunes.pdb
+C:\Users\Public\Documents\Git\SistemaContable\ClienteBancoCentral\ClienteBancoCentral\obj\Debug\ClienteBancoCentral.csprojResolveAssemblyReference.cache
+C:\Users\Public\Documents\Git\SistemaContable\ClienteBancoCentral\ClienteBancoCentral\obj\Debug\ClienteBancoCentral.dll
+C:\Users\Public\Documents\Git\SistemaContable\ClienteBancoCentral\ClienteBancoCentral\obj\Debug\ClienteBancoCentral.pdb
