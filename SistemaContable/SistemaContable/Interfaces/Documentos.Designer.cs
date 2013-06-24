@@ -52,9 +52,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.comboBoxProyecto = new System.Windows.Forms.ComboBox();
             this.buttonCrear = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBoxOrden = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.labelCodigo = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.buttonAgregarProducto = new System.Windows.Forms.Button();
@@ -71,7 +71,10 @@
             this.label15 = new System.Windows.Forms.Label();
             this.comboBoxAgregarProducto = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.comboBoxFactura = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.buttonCargarOrden = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDocumento)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -221,6 +224,7 @@
             this.comboBoxTipo.Name = "comboBoxTipo";
             this.comboBoxTipo.Size = new System.Drawing.Size(121, 21);
             this.comboBoxTipo.TabIndex = 1;
+            this.comboBoxTipo.SelectedIndexChanged += new System.EventHandler(this.comboBoxTipo_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -281,7 +285,7 @@
             this.comboBoxProyecto.FormattingEnabled = true;
             this.comboBoxProyecto.Location = new System.Drawing.Point(317, 41);
             this.comboBoxProyecto.Name = "comboBoxProyecto";
-            this.comboBoxProyecto.Size = new System.Drawing.Size(191, 21);
+            this.comboBoxProyecto.Size = new System.Drawing.Size(114, 21);
             this.comboBoxProyecto.TabIndex = 13;
             this.comboBoxProyecto.SelectedIndexChanged += new System.EventHandler(this.comboBoxProyecto_SelectedIndexChanged);
             // 
@@ -295,22 +299,13 @@
             this.buttonCrear.UseVisualStyleBackColor = true;
             this.buttonCrear.Click += new System.EventHandler(this.buttonCrear_Click);
             // 
-            // button2
+            // comboBoxOrden
             // 
-            this.button2.Location = new System.Drawing.Point(21, 384);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 23);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Cargar Orden de Venta...";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(164, 386);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(79, 21);
-            this.comboBox5.TabIndex = 17;
+            this.comboBoxOrden.FormattingEnabled = true;
+            this.comboBoxOrden.Location = new System.Drawing.Point(115, 384);
+            this.comboBoxOrden.Name = "comboBoxOrden";
+            this.comboBoxOrden.Size = new System.Drawing.Size(133, 21);
+            this.comboBoxOrden.TabIndex = 17;
             // 
             // groupBox2
             // 
@@ -337,6 +332,15 @@
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Agregar Producto";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(166, 52);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(43, 13);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Código:";
             // 
             // labelCodigo
             // 
@@ -483,23 +487,54 @@
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
-            // label7
+            // label9
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(166, 52);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 13);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "Código:";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(448, 44);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(46, 13);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Factura:";
+            // 
+            // comboBoxFactura
+            // 
+            this.comboBoxFactura.FormattingEnabled = true;
+            this.comboBoxFactura.Location = new System.Drawing.Point(506, 41);
+            this.comboBoxFactura.Name = "comboBoxFactura";
+            this.comboBoxFactura.Size = new System.Drawing.Size(114, 21);
+            this.comboBoxFactura.TabIndex = 20;
+            this.comboBoxFactura.SelectedIndexChanged += new System.EventHandler(this.comboBoxFactura_SelectedIndexChanged);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(24, 387);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(85, 13);
+            this.label12.TabIndex = 22;
+            this.label12.Text = "Orden de Venta:";
+            // 
+            // buttonCargarOrden
+            // 
+            this.buttonCargarOrden.Location = new System.Drawing.Point(254, 382);
+            this.buttonCargarOrden.Name = "buttonCargarOrden";
+            this.buttonCargarOrden.Size = new System.Drawing.Size(127, 23);
+            this.buttonCargarOrden.TabIndex = 24;
+            this.buttonCargarOrden.Text = "Cargar Orden de Venta";
+            this.buttonCargarOrden.UseVisualStyleBackColor = true;
+            this.buttonCargarOrden.Click += new System.EventHandler(this.buttonCargarOrden_Click);
             // 
             // Documentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(941, 417);
+            this.Controls.Add(this.buttonCargarOrden);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.comboBoxFactura);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.comboBoxOrden);
             this.Controls.Add(this.buttonCrear);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.comboBoxProyecto);
@@ -542,8 +577,7 @@
         private System.Windows.Forms.Label labelTotalArticulos;
         private System.Windows.Forms.Label labelTotalImpuesto;
         private System.Windows.Forms.Button buttonCrear;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBoxOrden;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCantidad;
@@ -569,5 +603,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelCodigo;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox comboBoxFactura;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button buttonCargarOrden;
     }
 }

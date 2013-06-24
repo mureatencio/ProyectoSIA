@@ -210,7 +210,6 @@ C:\Users\Public\Documents\Git\SistemaContable\SistemaContable\SistemaContable\ob
 C:\Users\Public\Documents\Git\SistemaContable\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.Documentos.resources
 C:\Users\Public\Documents\Git\SistemaContable\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.vntEditarCuenta.resources
 C:\Users\Public\Documents\Git\SistemaContable\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.EstadoResultados.resources
-C:\Users\Public\Documents\Git\SistemaContable\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.ExplorarProductos.resources
 C:\Users\Public\Documents\Git\SistemaContable\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.InsertarSocio.resources
 C:\Users\Public\Documents\Git\SistemaContable\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.Login.resources
 C:\Users\Public\Documents\Git\SistemaContable\SistemaContable\SistemaContable\obj\x86\Debug\SistemaContable.Interfaces.MuestraSocios.resources

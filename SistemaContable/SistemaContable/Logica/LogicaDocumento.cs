@@ -23,18 +23,85 @@ namespace SistemaContable.Logica
             }
         }
 
+        public static List<string> obtenerNumeroFacturas(string pEmpresa)
+        {
+            List<string> resultado = new List<string>();
+            try
+            {
+                object[] pArgumentos = new object[] { pEmpresa };
+                resultado = AccesoDocumento.obtenerNumeroFacturas(pArgumentos);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return resultado;
+        }
+
+        public static List<string> obtenerNumeroOrdenes(string pEmpresa)
+        {
+            List<string> resultado = new List<string>();
+            try
+            {
+                object[] pArgumentos = new object[] { pEmpresa };
+                resultado = AccesoDocumento.obtenerNumeroOrdenes(pArgumentos);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return resultado;
+        }
+
+
         public static int insertarDocumento(Documento pdocumento)
         {
-            
+
             try
             {
                 return AccesoDocumento.insertarDocumento(new object[] 
                 { 
                   pdocumento.socio, pdocumento.fechaContabilizacion,
-                  pdocumento.moneda, pdocumento.tipo, pdocumento.proyecto,pdocumento.numero ,
+                  pdocumento.moneda, pdocumento.tipo, pdocumento.proyecto,
                   pdocumento.totalPrecio, pdocumento.impuesto, pdocumento.total
                 });
-           
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public static int insertarNotaCredito(Documento pdocumento, int pnumeroFactura)
+        {
+
+            try
+            {
+                return AccesoDocumento.insertarNotaCredito(new object[] 
+                { 
+                  pdocumento.fechaContabilizacion,
+                  pdocumento.moneda, pdocumento.tipo,
+                  pdocumento.totalPrecio, pdocumento.impuesto, pdocumento.total, pnumeroFactura
+                });
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public static int tramitarOrdenVenta(int pNumeroOrden, DateTime pFecha, string pMoneda, string pCompania)
+        {
+
+            try
+            {
+                return AccesoDocumento.tramitarOrdenVenta(new object[] 
+                { 
+                  pNumeroOrden,pFecha,pMoneda,pCompania
+                });
+
             }
             catch (Exception ex)
             {

@@ -139,12 +139,6 @@
     <Compile Include="Interfaces\EstadoResultados.designer.cs">
       <DependentUpon>EstadoResultados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\ExplorarProductos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Interfaces\ExplorarProductos.Designer.cs">
-      <DependentUpon>ExplorarProductos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Interfaces\InsertarSocio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,9 +244,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\EstadoResultados.resx">
       <DependentUpon>EstadoResultados.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interfaces\ExplorarProductos.resx">
-      <DependentUpon>ExplorarProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\InsertarSocio.resx">
       <DependentUpon>InsertarSocio.cs</DependentUpon>

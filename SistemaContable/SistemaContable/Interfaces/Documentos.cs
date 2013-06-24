@@ -20,6 +20,8 @@ namespace SistemaContable.Interfaces
         private List<string> listaProyectos;
         private List<string> listaSocios;
         private List<Image> listaImagenes;
+        private List<string> listaFacturas;
+        private List<string> listaOrdenes;
         private string[] listaTiposDocumento = {"Factura de clientes", "Orden de Venta", "Notas de credito venta"};
         private Servicio seleccionadoActual;
         public string codigoInserción;
@@ -30,11 +32,32 @@ namespace SistemaContable.Interfaces
             InitializeComponent();
 
 
+            this.comboBoxFactura.Enabled = false;
+            this.comboBoxOrden.Enabled = true;
+
             this.listaProductos = LogicaServicios.obtenerNombreServicios(empresa);
             this.comboBoxAgregarProducto.DisplayMember = "Nombre";
             this.comboBoxAgregarProducto.ValueMember = "ID";
             this.comboBoxAgregarProducto.SelectedText = "Nombre";
             this.comboBoxAgregarProducto.DataSource = this.listaProductos;
+
+            this.listaFacturas = LogicaDocumento.obtenerNumeroFacturas(empresa);
+            this.comboBoxFactura.DisplayMember = "Nombre";
+            this.comboBoxFactura.ValueMember = "ID";
+            this.comboBoxFactura.SelectedText = "Nombre";
+            this.comboBoxFactura.DataSource = this.listaFacturas;
+
+            this.listaOrdenes = LogicaDocumento.obtenerNumeroOrdenes(empresa);
+            this.comboBoxOrden.DisplayMember = "Nombre";
+            this.comboBoxOrden.ValueMember = "ID";
+            this.comboBoxOrden.SelectedText = "Nombre";
+            this.comboBoxOrden.DataSource = this.listaOrdenes;
+
+            this.listaProyectos = LogicaProyectos.obtenerNombreProyectos(empresa);
+            this.comboBoxProyecto.DisplayMember = "Nombre";
+            this.comboBoxProyecto.ValueMember = "ID";
+            this.comboBoxProyecto.SelectedText = "Nombre";
+            this.comboBoxProyecto.DataSource = this.listaProyectos;
 
             string seleccionado = Convert.ToString(comboBoxAgregarProducto.SelectedItem);
 
@@ -54,12 +77,6 @@ namespace SistemaContable.Interfaces
             this.comboBoxSocio.ValueMember = "ID";
             this.comboBoxSocio.SelectedText = "Nombre";
             this.comboBoxSocio.DataSource = this.listaSocios;
-
-            this.listaProyectos = LogicaProyectos.obtenerNombreProyectos(comboBoxSocio.SelectedValue.ToString(),empresa);
-            this.comboBoxProyecto.DisplayMember = "Nombre";
-            this.comboBoxProyecto.ValueMember = "ID";
-            this.comboBoxProyecto.SelectedText = "Nombre";
-            this.comboBoxProyecto.DataSource = this.listaProyectos;
 
             this.comboBoxTipo.DisplayMember = "Nombre";
             this.comboBoxTipo.ValueMember = "ID";
@@ -83,9 +100,7 @@ namespace SistemaContable.Interfaces
         private void buttonAgregarArticulo_Click(object sender, EventArgs e)
         {
             this.dataGridViewDocumento.Rows.Add();
-            ExplorarProductos ventanaExplorarProductos = new ExplorarProductos(this.empresa, this.dataGridViewDocumento.Rows.Count-1);
-            ventanaExplorarProductos.ShowDialog();
-
+            
         }
 
 
@@ -173,11 +188,7 @@ namespace SistemaContable.Interfaces
 
         private void comboBoxSocio_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.listaProyectos = LogicaProyectos.obtenerNombreProyectos(comboBoxSocio.SelectedValue.ToString(), empresa);
-            this.comboBoxProyecto.DisplayMember = "Nombre";
-            this.comboBoxProyecto.ValueMember = "ID";
-            this.comboBoxProyecto.SelectedText = "Nombre";
-            this.comboBoxProyecto.DataSource = this.listaProyectos;
+            
         }
 
         private void buttonCrear_Click(object sender, EventArgs e)
@@ -188,20 +199,21 @@ namespace SistemaContable.Interfaces
            
             }
             else
+                if (this.comboBoxTipo.SelectedValue.ToString() == "Factura de clientes" ||
+                    this.comboBoxTipo.SelectedValue.ToString() == "Orden de Venta")
             {
 
                 string nombreMonedaLocal = LogicaEmpresas.obtenerMonedaLocalEmpresa(empresa);
                 Documento nuevoDocumento = new Documento();
 
                 nuevoDocumento.tipo = this.comboBoxTipo.SelectedValue.ToString();
-                nuevoDocumento.fechaContabilizacion = this.dateTimePickerFecha.Value;
+                nuevoDocumento.fechaContabilizacion = Convert.ToDateTime(this.dateTimePickerFecha.Value.ToString());
                 nuevoDocumento.socio = this.comboBoxSocio.SelectedValue.ToString();
                 nuevoDocumento.proyecto = this.comboBoxProyecto.SelectedValue.ToString();
                 nuevoDocumento.impuesto = Convert.ToDouble(this.labelTotalImpuesto.Text);
                 nuevoDocumento.totalPrecio = Convert.ToDouble(this.labelTotalArticulos.Text);
                 nuevoDocumento.total = Convert.ToDouble(this.labelTotal.Text);
                 nuevoDocumento.moneda = nombreMonedaLocal;
-                nuevoDocumento.numero = 1;
 
                 int codigoUnico = LogicaDocumento.insertarDocumento(nuevoDocumento);
 
@@ -220,7 +232,71 @@ namespace SistemaContable.Interfaces
 
                 }
 
-                MessageBox.Show("El documento fue insertado", "Información", MessageBoxButtons.OK);
+                MessageBox.Show("La factura fue insertada con el número: " + codigoUnico.ToString(), "Información", MessageBoxButtons.OK);
+            }
+            else
+                if (this.comboBoxTipo.SelectedValue.ToString() == "Notas de credito venta")
+            {
+                string nombreMonedaLocal = LogicaEmpresas.obtenerMonedaLocalEmpresa(empresa);
+                Documento nuevoDocumento = new Documento();
+
+                nuevoDocumento.tipo = this.comboBoxTipo.SelectedValue.ToString();
+                nuevoDocumento.fechaContabilizacion = Convert.ToDateTime(this.dateTimePickerFecha.Value.ToString());
+                nuevoDocumento.socio = this.comboBoxSocio.SelectedValue.ToString();
+                nuevoDocumento.proyecto = this.comboBoxProyecto.SelectedValue.ToString();
+                nuevoDocumento.impuesto = Convert.ToDouble(this.labelTotalImpuesto.Text);
+                nuevoDocumento.totalPrecio = Convert.ToDouble(this.labelTotalArticulos.Text);
+                nuevoDocumento.total = Convert.ToDouble(this.labelTotal.Text);
+                nuevoDocumento.moneda = nombreMonedaLocal;
+                int numeroFactura = Convert.ToInt16(comboBoxFactura.SelectedValue.ToString());
+
+                int codigoUnico = LogicaDocumento.insertarNotaCredito(nuevoDocumento, numeroFactura );
+                MessageBox.Show("La Nota de crédito fue insertada", "Información", MessageBoxButtons.OK);
+          
+            }
+
+        }
+
+        private void comboBoxTipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (this.comboBoxTipo.SelectedValue.ToString() == "Notas de credito venta")
+            {
+                this.comboBoxFactura.Enabled = true;
+                this.comboBoxProyecto.Enabled = false;
+                this.comboBoxSocio.Enabled = false;
+            }
+            else 
+            {
+
+                this.comboBoxFactura.Enabled = false;
+                this.comboBoxProyecto.Enabled = true;
+                this.comboBoxSocio.Enabled = true;
+            }
+        }
+
+        private void comboBoxFactura_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonCargarOrden_Click(object sender, EventArgs e)
+        {
+            if (comboBoxOrden.SelectedValue.ToString() == "")
+            {
+                MessageBox.Show("Debe seleccionar una orden de venta válida", "Advertencia", MessageBoxButtons.OK);
+            }
+            else 
+            {
+                DialogResult dialogResult = MessageBox.Show("¿Está seguro que desea cargar esta orden de venta?", "Advertencia", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    int codigoUnico = LogicaDocumento.tramitarOrdenVenta(Convert.ToInt32(this.comboBoxOrden.SelectedValue.ToString()),
+                                                                    Convert.ToDateTime(this.dateTimePickerFecha.Value.ToString()),
+                                                                    LogicaEmpresas.obtenerMonedaLocalEmpresa(empresa),empresa);
+                    MessageBox.Show("Se ha generado la factura a partir de la orden", "Información", MessageBoxButtons.OK); 
+                }
+                
+
             }
         }
 

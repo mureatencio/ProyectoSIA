@@ -9,12 +9,12 @@ namespace SistemaContable.Logica
 {
     public static class LogicaProyectos
     {
-        public static List<string> obtenerNombreProyectos(string pSocio, string pEmpresa)
+        public static List<string> obtenerNombreProyectos(string pEmpresa)
         {
             List<string> resultado = new List<string>();
             try
             {
-                object[] pArgumentos = new object[] { pSocio, pEmpresa };
+                object[] pArgumentos = new object[] { pEmpresa };
                 resultado = AccesoProyectos.obtenerNombreProyectos(pArgumentos);
             }
             catch (Exception ex)

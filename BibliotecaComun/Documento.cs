@@ -15,6 +15,5 @@ namespace BibliotecasComunes
         public double totalPrecio { get; set; }
         public double impuesto { get; set; }
         public double total { get; set; }
-        public int numero { get; set; }
     }
 }
