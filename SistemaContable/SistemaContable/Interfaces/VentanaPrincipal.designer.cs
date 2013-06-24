@@ -44,13 +44,23 @@
             this.configuraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarServicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.documentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearDocumentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.comprasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevaCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblEmpresa = new System.Windows.Forms.Label();
             this.logoBox = new System.Windows.Forms.PictureBox();
             this.lblCedula = new System.Windows.Forms.Label();
             this.lblTel = new System.Windows.Forms.Label();
             this.lblF = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.documentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearDocumentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+=======
+            this.proyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearProyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verProyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+>>>>>>> origin/Compras-y-ventas
             this.menuVentanaPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox)).BeginInit();
             this.SuspendLayout();
@@ -62,13 +72,22 @@
             this.asientosToolStripMenuItem,
             this.cierresContablesToolStripMenuItem,
             this.reportesToolStripMenuItem,
+<<<<<<< HEAD
             this.sociosToolStripMenuItem,
             this.configuraciónToolStripMenuItem,
             this.serviciosToolStripMenuItem,
             this.documentosToolStripMenuItem});
+=======
+            this.proyectosToolStripMenuItem,
+            this.sociosToolStripMenuItem,
+            this.serviciosToolStripMenuItem,
+            this.documentosToolStripMenuItem,
+            this.comprasToolStripMenuItem,
+            this.configuraciónToolStripMenuItem});
+>>>>>>> origin/Compras-y-ventas
             this.menuVentanaPrincipal.Location = new System.Drawing.Point(0, 0);
             this.menuVentanaPrincipal.Name = "menuVentanaPrincipal";
-            this.menuVentanaPrincipal.Size = new System.Drawing.Size(720, 24);
+            this.menuVentanaPrincipal.Size = new System.Drawing.Size(768, 24);
             this.menuVentanaPrincipal.TabIndex = 0;
             this.menuVentanaPrincipal.Text = "menuStrip1";
             // 
@@ -185,6 +204,36 @@
             this.agregarServicioToolStripMenuItem.Text = "Agregar Servicio";
             this.agregarServicioToolStripMenuItem.Click += new System.EventHandler(this.agregarServicioToolStripMenuItem_Click);
             // 
+            // documentosToolStripMenuItem
+            // 
+            this.documentosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.crearDocumentoToolStripMenuItem});
+            this.documentosToolStripMenuItem.Name = "documentosToolStripMenuItem";
+            this.documentosToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.documentosToolStripMenuItem.Text = "Ventas";
+            // 
+            // crearDocumentoToolStripMenuItem
+            // 
+            this.crearDocumentoToolStripMenuItem.Name = "crearDocumentoToolStripMenuItem";
+            this.crearDocumentoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.crearDocumentoToolStripMenuItem.Text = "Nueva Venta";
+            this.crearDocumentoToolStripMenuItem.Click += new System.EventHandler(this.crearDocumentoToolStripMenuItem_Click);
+            // 
+            // comprasToolStripMenuItem
+            // 
+            this.comprasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevaCompraToolStripMenuItem});
+            this.comprasToolStripMenuItem.Name = "comprasToolStripMenuItem";
+            this.comprasToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.comprasToolStripMenuItem.Text = "Compras";
+            // 
+            // nuevaCompraToolStripMenuItem
+            // 
+            this.nuevaCompraToolStripMenuItem.Name = "nuevaCompraToolStripMenuItem";
+            this.nuevaCompraToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.nuevaCompraToolStripMenuItem.Text = "Nueva Compra";
+            this.nuevaCompraToolStripMenuItem.Click += new System.EventHandler(this.nuevaCompraToolStripMenuItem_Click);
+            // 
             // lblEmpresa
             // 
             this.lblEmpresa.AutoSize = true;
@@ -235,6 +284,7 @@
             // 
             // documentosToolStripMenuItem
             // 
+<<<<<<< HEAD
             this.documentosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.crearDocumentoToolStripMenuItem});
             this.documentosToolStripMenuItem.Name = "documentosToolStripMenuItem";
@@ -247,12 +297,34 @@
             this.crearDocumentoToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.crearDocumentoToolStripMenuItem.Text = "Crear Documento";
             this.crearDocumentoToolStripMenuItem.Click += new System.EventHandler(this.crearDocumentoToolStripMenuItem_Click);
+=======
+            this.proyectosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.crearProyectoToolStripMenuItem,
+            this.verProyectosToolStripMenuItem});
+            this.proyectosToolStripMenuItem.Name = "proyectosToolStripMenuItem";
+            this.proyectosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.proyectosToolStripMenuItem.Text = "Proyectos";
+            // 
+            // crearProyectoToolStripMenuItem
+            // 
+            this.crearProyectoToolStripMenuItem.Name = "crearProyectoToolStripMenuItem";
+            this.crearProyectoToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.crearProyectoToolStripMenuItem.Text = "Agregar Proyecto";
+            this.crearProyectoToolStripMenuItem.Click += new System.EventHandler(this.crearProyectoToolStripMenuItem_Click);
+            // 
+            // verProyectosToolStripMenuItem
+            // 
+            this.verProyectosToolStripMenuItem.Name = "verProyectosToolStripMenuItem";
+            this.verProyectosToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.verProyectosToolStripMenuItem.Text = "Ver Proyectos";
+            this.verProyectosToolStripMenuItem.Click += new System.EventHandler(this.verProyectosToolStripMenuItem_Click);
+>>>>>>> origin/Compras-y-ventas
             // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(720, 272);
+            this.ClientSize = new System.Drawing.Size(768, 272);
             this.Controls.Add(this.lblF);
             this.Controls.Add(this.lblTel);
             this.Controls.Add(this.lblCedula);
@@ -294,5 +366,13 @@
         private System.Windows.Forms.ToolStripMenuItem agregarServicioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem documentosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem crearDocumentoToolStripMenuItem;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.ToolStripMenuItem comprasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevaCompraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem proyectosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem crearProyectoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verProyectosToolStripMenuItem;
+>>>>>>> origin/Compras-y-ventas
     }
 }

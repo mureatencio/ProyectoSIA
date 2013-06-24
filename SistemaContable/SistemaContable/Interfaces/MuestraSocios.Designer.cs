@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.dtgrdSocios = new System.Windows.Forms.DataGridView();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.CódigoSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TipoSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,7 +37,9 @@
             this.LimiteCredito = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CodigoMoneda = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CondicionPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VerDocumentos = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.VerDocumentosCompras = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.VerDocumentosVentas = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrdSocios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,23 +57,14 @@
             this.LimiteCredito,
             this.CodigoMoneda,
             this.CondicionPago,
-            this.VerDocumentos});
-            this.dtgrdSocios.Location = new System.Drawing.Point(5, 13);
+            this.VerDocumentosCompras,
+            this.VerDocumentosVentas});
+            this.dtgrdSocios.Location = new System.Drawing.Point(12, 12);
             this.dtgrdSocios.Name = "dtgrdSocios";
             this.dtgrdSocios.ReadOnly = true;
-            this.dtgrdSocios.Size = new System.Drawing.Size(811, 314);
+            this.dtgrdSocios.Size = new System.Drawing.Size(1009, 314);
             this.dtgrdSocios.TabIndex = 0;
             this.dtgrdSocios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrdSocios_CellContentClick);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(741, 333);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
-            this.btnSalir.TabIndex = 1;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // CódigoSocio
             // 
@@ -123,17 +115,33 @@
             this.CondicionPago.Name = "CondicionPago";
             this.CondicionPago.ReadOnly = true;
             // 
-            // VerDocumentos
+            // VerDocumentosCompras
             // 
-            this.VerDocumentos.HeaderText = "Ver Documentos";
-            this.VerDocumentos.Name = "VerDocumentos";
-            this.VerDocumentos.ReadOnly = true;
+            this.VerDocumentosCompras.HeaderText = "Ver Documentos Compras";
+            this.VerDocumentosCompras.Name = "VerDocumentosCompras";
+            this.VerDocumentosCompras.ReadOnly = true;
+            // 
+            // VerDocumentosVentas
+            // 
+            this.VerDocumentosVentas.HeaderText = "Ver Documentos Ventas";
+            this.VerDocumentosVentas.Name = "VerDocumentosVentas";
+            this.VerDocumentosVentas.ReadOnly = true;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(946, 346);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 1;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // MuestraSocios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(828, 368);
+            this.ClientSize = new System.Drawing.Size(1028, 381);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.dtgrdSocios);
             this.Name = "MuestraSocios";
@@ -155,6 +163,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn LimiteCredito;
         private System.Windows.Forms.DataGridViewTextBoxColumn CodigoMoneda;
         private System.Windows.Forms.DataGridViewTextBoxColumn CondicionPago;
-        private System.Windows.Forms.DataGridViewButtonColumn VerDocumentos;
+        private System.Windows.Forms.DataGridViewButtonColumn VerDocumentosCompras;
+        private System.Windows.Forms.DataGridViewButtonColumn VerDocumentosVentas;
     }
 }

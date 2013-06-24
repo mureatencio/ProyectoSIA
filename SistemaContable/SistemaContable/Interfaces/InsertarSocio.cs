@@ -81,38 +81,43 @@ namespace SistemaContable.Interfaces
             {
                 MessageBox.Show("Lo siento debe insertar el código del nuevo socio");
             }
-            if(txtNombresocio.Text.Equals(""))
+            else if(txtNombresocio.Text.Equals(""))
             {
                 MessageBox.Show("Lo siento debe insertar el nombre del nuevo socio");
             }
-            if (txtCondicionpago.Text.Equals(""))
+            else if (txtCondicionpago.Text.Equals(""))
             {
                 MessageBox.Show("Lo siento debe insertar la condición de pago del nuevo socio");
             }
-            if (txtLimite.Text.Equals(""))
+            else if (txtLimite.Text.Equals(""))
             {
                 MessageBox.Show("Lo siento debe insertar el límite de crédito del nuevo socio");
             }
-            if (cmbCuenta.SelectedItem.Equals(""))
+            else if (cmbCuenta.SelectedItem.Equals(""))
             {
                 MessageBox.Show("Lo siento debe escoger una cuenta asociada al nuevo socio");
             }
-            if (cmbMoneda.SelectedItem.Equals(""))
+            else if (cmbMoneda.SelectedItem.Equals(""))
             {
                 MessageBox.Show("Lo siento debe escoger la moneda del nuevo socio");
             }
-            if (cmbTiposocio.SelectedItem.Equals(""))
+            else if (cmbTiposocio.SelectedItem.Equals(""))
             {
                 MessageBox.Show("Lo siento debe el tipo de socio del nuevo socio");
             }
-            try
+            else
             {
-                Cuenta cuenta = cuentas.Find(s => s.Nombre.Equals(cmbCuenta.SelectedItem.ToString()));
-                LogicaSocios.insertarSocio(empresa, cmbMoneda.SelectedItem.ToString(), cuenta.ID, cmbTiposocio.SelectedItem.ToString(), txtCodigo.Text, txtNombresocio.Text, double.Parse(txtLimite.Text), Int32.Parse(txtCondicionpago.Text));
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("No se pudo ingresar el socio");
+                try
+                {
+                    Cuenta cuenta = cuentas.Find(s => s.Nombre.Equals(cmbCuenta.SelectedItem.ToString()));
+                    LogicaSocios.insertarSocio(empresa, cmbMoneda.SelectedItem.ToString(), cuenta.ID, cmbTiposocio.SelectedItem.ToString(), txtCodigo.Text, txtNombresocio.Text, double.Parse(txtLimite.Text), Int32.Parse(txtCondicionpago.Text));
+                    MessageBox.Show("Socio agregado con éxito!");
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("No se pudo ingresar el socio");
+                }
             }
         }
 

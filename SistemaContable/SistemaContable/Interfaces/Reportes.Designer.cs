@@ -39,7 +39,7 @@
             // 
             // btnGenerarReporte
             // 
-            this.btnGenerarReporte.Location = new System.Drawing.Point(543, 75);
+            this.btnGenerarReporte.Location = new System.Drawing.Point(595, 5);
             this.btnGenerarReporte.Name = "btnGenerarReporte";
             this.btnGenerarReporte.Size = new System.Drawing.Size(75, 23);
             this.btnGenerarReporte.TabIndex = 1;
@@ -52,16 +52,16 @@
             this.crstlRComprobacion.ActiveViewIndex = -1;
             this.crstlRComprobacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crstlRComprobacion.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crstlRComprobacion.Location = new System.Drawing.Point(2, 104);
+            this.crstlRComprobacion.Location = new System.Drawing.Point(2, 39);
             this.crstlRComprobacion.Name = "crstlRComprobacion";
-            this.crstlRComprobacion.Size = new System.Drawing.Size(626, 288);
+            this.crstlRComprobacion.Size = new System.Drawing.Size(916, 353);
             this.crstlRComprobacion.TabIndex = 5;
             this.crstlRComprobacion.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
             // cmbPeriodo
             // 
             this.cmbPeriodo.FormattingEnabled = true;
-            this.cmbPeriodo.Location = new System.Drawing.Point(89, 36);
+            this.cmbPeriodo.Location = new System.Drawing.Point(87, 12);
             this.cmbPeriodo.Name = "cmbPeriodo";
             this.cmbPeriodo.Size = new System.Drawing.Size(146, 21);
             this.cmbPeriodo.TabIndex = 21;
@@ -69,7 +69,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 39);
+            this.label1.Location = new System.Drawing.Point(10, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 13);
             this.label1.TabIndex = 22;
@@ -77,7 +77,7 @@
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(543, 402);
+            this.btnVolver.Location = new System.Drawing.Point(843, 411);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
             this.btnVolver.TabIndex = 23;
@@ -88,7 +88,7 @@
             // comboBoxPeriodoFin
             // 
             this.comboBoxPeriodoFin.FormattingEnabled = true;
-            this.comboBoxPeriodoFin.Location = new System.Drawing.Point(320, 36);
+            this.comboBoxPeriodoFin.Location = new System.Drawing.Point(318, 12);
             this.comboBoxPeriodoFin.Name = "comboBoxPeriodoFin";
             this.comboBoxPeriodoFin.Size = new System.Drawing.Size(146, 21);
             this.comboBoxPeriodoFin.TabIndex = 24;
@@ -96,7 +96,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(257, 39);
+            this.label2.Location = new System.Drawing.Point(255, 15);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 25;
@@ -106,7 +106,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(630, 437);
+            this.ClientSize = new System.Drawing.Size(930, 446);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBoxPeriodoFin);
             this.Controls.Add(this.btnVolver);

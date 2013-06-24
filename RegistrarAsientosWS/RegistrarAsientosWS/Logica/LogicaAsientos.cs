@@ -13,7 +13,7 @@ namespace AsientosWS.Logica
         {
             try
             {
-                object[] pArgumentos = new object[] { Tabla, Compania, numAsiento, detalle };
+                object[] pArgumentos = new object[] { Tabla, Compania, numAsiento, detalle, "AS", "" };
                 AccesoAsientos.crearAsiento(pArgumentos);
             }
             catch (Exception ex)

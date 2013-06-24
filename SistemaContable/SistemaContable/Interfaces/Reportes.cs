@@ -74,7 +74,7 @@ namespace SistemaContable.Interfaces
                 string fechaini = tokens[0];
 
                 string nuevoEstadofin = this.comboBoxPeriodoFin.SelectedItem.ToString();
-                string[] tokensfin = nuevoEstado.Split('/');
+                string[] tokensfin = nuevoEstadofin.Split('/');
                 string fechafin = tokensfin[1];
                     
                 
