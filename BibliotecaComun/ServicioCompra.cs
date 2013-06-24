@@ -12,7 +12,7 @@ namespace BibliotecasComunes
         public int Cantidad { get; set; }
         public double Precio { get; set; }
         public double Total { get; set; }
-        public int Impuesto { get; set; }
+        public double Impuesto { get; set; }
         public double TotalImpuesto { get; set; }
     }
 }

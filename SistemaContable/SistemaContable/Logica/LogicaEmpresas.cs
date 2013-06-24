@@ -10,6 +10,19 @@ namespace SistemaContable.Logica
 {
     public class LogicaEmpresas
     {
+        public static string obtenerMonedaLocalEmpresa(string pempresa)
+        {
+            string moneda = "";
+            try
+            {
+                moneda = AccesoEmpresas.obtenerMonedaLocalEmpresa(new object[] {pempresa});
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return moneda;
+        }
 
         public static List<string> obtenerNombreEmpresas()
         {

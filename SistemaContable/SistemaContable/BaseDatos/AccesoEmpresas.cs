@@ -10,6 +10,34 @@ namespace SistemaContable.BaseDatos
 {
     public static class AccesoEmpresas
     {
+        public static string obtenerMonedaLocalEmpresa(object[] pArgumento)
+        {
+            string resultado = "";
+
+            SqlDataReader dataReader = null;
+            try
+            {
+                dataReader = SqlServer.Instance.traerDataReader("obtenerMonedaLocal", pArgumento);
+                if (dataReader.HasRows)
+                {
+                    while (dataReader.Read())
+                    {
+                        resultado = dataReader["Nombre"].ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                SqlServer.Instance.cerrarDataReader(dataReader);
+                SqlServer.Instance.CerrarConexion();
+            }
+            return resultado;
+        }
+
         public static List<string> obtenerNombreEmpresas()
         {
             List<string> resultado = new List<string>();

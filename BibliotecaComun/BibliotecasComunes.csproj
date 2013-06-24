@@ -43,8 +43,10 @@
     <Compile Include="Asiento.cs" />
     <Compile Include="Compra.cs" />
     <Compile Include="Cuenta.cs" />
+    <Compile Include="Documento.cs" />
     <Compile Include="Empresa.cs" />
     <Compile Include="Estado.cs" />
+    <Compile Include="Linea.cs" />
     <Compile Include="Moneda.cs" />
     <Compile Include="Proyecto.cs" />
     <Compile Include="Servicio.cs" />

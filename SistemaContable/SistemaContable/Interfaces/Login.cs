@@ -37,18 +37,18 @@ namespace SistemaContable.Interfaces
                 contrasena = this.textBoxContrasena.Text;
                 empresa = this.comboBoxEmpresaLogin.SelectedItem.ToString();
 
-                if (LogicaUsuarios.AutenticarUsuario(nombre, contrasena, empresa))
-                {
+                //if (LogicaUsuarios.AutenticarUsuario(nombre, contrasena, empresa))
+                //{
                     //                MessageBox.Show("Bienvenido", "Información", MessageBoxButtons.OK);
                     VentanaPrincipal vPrincipal = new VentanaPrincipal(empresa);
                     this.Hide();
                     vPrincipal.ShowDialog();
                     this.Dispose();
-                }
-                else
-                {
-                    MessageBox.Show("Error de nombre de usuario o contraseña.");
-                }
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Error de nombre de usuario o contraseña.");
+                //}
             }
         }
     }

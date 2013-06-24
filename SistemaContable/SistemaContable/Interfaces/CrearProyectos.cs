@@ -27,16 +27,19 @@ namespace SistemaContable.Interfaces
                 {
                     MessageBox.Show("Debe ingresar el nombre del proyecto");
                 }
-                if (txtCodigoproyecto.Text.Equals(""))
+                else if (txtCodigoproyecto.Text.Equals(""))
                 {
                     MessageBox.Show("Debe ingresar el código del proyecto");
                 }
-                if (rchtxtDescripcion.Text.Equals(""))
+                else if (rchtxtDescripcion.Text.Equals(""))
                 {
                     MessageBox.Show("Debe escribir una descripción del proyecto");
                 }
-                LogicaProyectos.insertarProyecto(empresa, txtNombreproyecto.Text, txtCodigoproyecto.Text, rchtxtDescripcion.Text);
-                MessageBox.Show("Proyecto creado con éxito!.");
+                else
+                {
+                    LogicaProyectos.insertarProyecto(empresa, txtNombreproyecto.Text, txtCodigoproyecto.Text, rchtxtDescripcion.Text);
+                    MessageBox.Show("Proyecto creado con éxito!.");
+                }
             }
             catch (Exception ex)
             {

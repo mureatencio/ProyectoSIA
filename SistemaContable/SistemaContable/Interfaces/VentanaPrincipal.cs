@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using SistemaContable.Logica;
+using BibliotecasComunes;
 
 namespace SistemaContable.Interfaces
 {
     public partial class VentanaPrincipal : Form
     {
         string NombreEmpresa;
-        BibliotecasComunes.Empresa Empresa;
+        Empresa Empresa;
 
         public VentanaPrincipal(string pNombreEmpresa)
         {
@@ -115,7 +116,19 @@ namespace SistemaContable.Interfaces
             ventanaservicios.ShowDialog();
         }
 
-        private void agregarProyectosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void crearDocumentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Documentos ventanaDocumentos = new Documentos(this.NombreEmpresa);
+            ventanaDocumentos.ShowDialog();
+        }
+
+        private void nuevaCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Compras ventanaCompra = new Compras(this.NombreEmpresa);
+            ventanaCompra.ShowDialog();
+        }
+
+        private void crearProyectoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CrearProyectos ventanaCrearProyectos = new CrearProyectos(this.NombreEmpresa);
             ventanaCrearProyectos.ShowDialog();
@@ -126,7 +139,5 @@ namespace SistemaContable.Interfaces
             VerProyectos ventanaVerProyectos = new VerProyectos(this.NombreEmpresa);
             ventanaVerProyectos.ShowDialog();
         }
-
-
     }
 }

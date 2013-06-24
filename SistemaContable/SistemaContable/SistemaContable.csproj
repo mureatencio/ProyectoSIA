@@ -64,6 +64,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -86,6 +88,7 @@
     <Compile Include="BaseDatos\AccesoCompras.cs" />
     <Compile Include="BaseDatos\AccesoCuentas.cs" />
     <Compile Include="BaseDatos\AccesoDatos.cs" />
+    <Compile Include="BaseDatos\AccesoDocumento.cs" />
     <Compile Include="BaseDatos\AccesoEmpresas.cs" />
     <Compile Include="BaseDatos\AccesoEstadoResultados.cs" />
     <Compile Include="BaseDatos\AccesoMonedas.cs" />
@@ -106,6 +109,12 @@
     <Compile Include="Interfaces\CatalogoCuentas.designer.cs">
       <DependentUpon>CatalogoCuentas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Compras.designer.cs">
+      <DependentUpon>Compras.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\ControlPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +132,18 @@
     </Compile>
     <Compile Include="Interfaces\CuentaAsiento.designer.cs">
       <DependentUpon>CuentaAsiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Documentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Documentos.Designer.cs">
+      <DependentUpon>Documentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\DocumentosCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\DocumentosCompra.designer.cs">
+      <DependentUpon>DocumentosCompra.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\EditarCuentas.cs">
       <SubType>Form</SubType>
@@ -172,11 +193,24 @@
     <Compile Include="Interfaces\Servicios.Designer.cs">
       <DependentUpon>Servicios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Variables.cs" />
     <Compile Include="Interfaces\VentanaBalanceGeneral.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interfaces\VentanaBalanceGeneral.designer.cs">
       <DependentUpon>VentanaBalanceGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\VentanaDocSocioCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\VentanaDocSocioCompras.designer.cs">
+      <DependentUpon>VentanaDocSocioCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\VentanaDocsSociosVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\VentanaDocsSociosVentas.designer.cs">
+      <DependentUpon>VentanaDocsSociosVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\VentanaPrincipal.cs">
       <SubType>Form</SubType>
@@ -184,11 +218,29 @@
     <Compile Include="Interfaces\VentanaPrincipal.designer.cs">
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\VentanaVerDocsSociosCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\VentanaVerDocsSociosCompras.designer.cs">
+      <DependentUpon>VentanaVerDocsSociosCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\VentanaVerDocsSocioVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\VentanaVerDocsSocioVentas.designer.cs">
+      <DependentUpon>VentanaVerDocsSocioVentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\VerAsiento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interfaces\VerAsiento.designer.cs">
       <DependentUpon>VerAsiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\VerDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\VerDocumento.designer.cs">
+      <DependentUpon>VerDocumento.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\VerProyectos.cs">
       <SubType>Form</SubType>
@@ -201,6 +253,7 @@
     <Compile Include="Logica\LogicaCierre.cs" />
     <Compile Include="Logica\LogicaCompras.cs" />
     <Compile Include="Logica\LogicaCuentas.cs" />
+    <Compile Include="Logica\LogicaDocumento.cs" />
     <Compile Include="Logica\LogicaEmpresas.cs" />
     <Compile Include="Logica\LogicaEstadoResultados.cs" />
     <Compile Include="Logica\LogicaMonedas.cs" />
@@ -232,6 +285,9 @@
     <EmbeddedResource Include="Interfaces\CatalogoCuentas.resx">
       <DependentUpon>CatalogoCuentas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Compras.resx">
+      <DependentUpon>Compras.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\ControlPanel.resx">
       <DependentUpon>ControlPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -240,6 +296,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\CuentaAsiento.resx">
       <DependentUpon>CuentaAsiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Documentos.resx">
+      <DependentUpon>Documentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\DocumentosCompra.resx">
+      <DependentUpon>DocumentosCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\EditarCuentas.resx">
       <DependentUpon>EditarCuentas.cs</DependentUpon>
@@ -268,11 +330,26 @@
     <EmbeddedResource Include="Interfaces\VentanaBalanceGeneral.resx">
       <DependentUpon>VentanaBalanceGeneral.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\VentanaDocSocioCompras.resx">
+      <DependentUpon>VentanaDocSocioCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\VentanaDocsSociosVentas.resx">
+      <DependentUpon>VentanaDocsSociosVentas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\VentanaPrincipal.resx">
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\VentanaVerDocsSociosCompras.resx">
+      <DependentUpon>VentanaVerDocsSociosCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\VentanaVerDocsSocioVentas.resx">
+      <DependentUpon>VentanaVerDocsSocioVentas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\VerAsiento.resx">
       <DependentUpon>VerAsiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\VerDocumento.resx">
+      <DependentUpon>VerDocumento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\VerProyectos.resx">
       <DependentUpon>VerProyectos.cs</DependentUpon>

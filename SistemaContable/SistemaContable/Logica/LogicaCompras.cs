@@ -10,21 +10,11 @@ namespace SistemaContable.Logica
 {
     public static class LogicaCompras
     {
-        /*  EL DATATABLE QUE RECIBE ESTA FUNCION TIENE QUE TENER:
-         * Nombre string
-         * Descripcion string
-         * Cantidad int
-         * Precio double
-         * Impuesto int
-         * 
-         * EL DATAGRID PUEDE CONTENER ESTO CUANDO SE CREA LA VENTANA
-         * 
-         */
-        public static void insertarCompra(string pEmpresa, string pCodigoSocio ,string pCodigoProyecto, string pCodigoMoneda, string pTipoCompra, DataTable pServicios)
+        public static void insertarCompra(string pEmpresa, string pCodigoSocio, string pCodigoProyecto, string pCodigoMoneda, string pTipoCompra, double pTotal, double pTotalImpuesto, double pTotalJunto, DataTable pServicios, DateTime pFecha, int pNumeroFactura)
         {
             try
             {
-                object[] pArgumentos = { pEmpresa, pCodigoSocio, pCodigoProyecto, pCodigoMoneda, pTipoCompra, pServicios };
+                object[] pArgumentos = { pEmpresa, pCodigoSocio, pCodigoProyecto, pCodigoMoneda, pTipoCompra, pTotal, pTotalImpuesto, pTotalJunto, pServicios, pFecha, pNumeroFactura };
                 AccesoCompras.insertarCompra(pArgumentos);
             }
             catch (Exception ex)
@@ -33,13 +23,13 @@ namespace SistemaContable.Logica
             }
         }
 
-        public static List<Compra> obtenerCompras(string pEmpresa, string pCodigoProyecto)
+        public static List<Compra> obtenerDocumentoAnterior(string pEmpresa, string pTipoDocumento)
         {
             List<Compra> resultado = new List<Compra>();
             try
             {
-                object[] pArgumentos = new object[] { pEmpresa, pCodigoProyecto };
-                resultado = AccesoCompras.obtenerCompras(pArgumentos);
+                object[] pArgumentos = new object[] { pEmpresa, pTipoDocumento };
+                resultado = AccesoCompras.obtenerDocumentoAnterior(pArgumentos);
             }
             catch (Exception ex)
             {
@@ -47,15 +37,31 @@ namespace SistemaContable.Logica
             }
 
             return resultado;
+
         }
 
-        public static List<Compra> obtenerFacturasCompraPendientes(string pEmpresa)
+        public static List<Compra> obtenerFacturasCompraPendientes(string pEmpresa, string pCodigoSocio)
+        {
+            List<Compra> resultado = new List<Compra>();
+            try
+            {
+                object[] pArgumentos = new object[] { pEmpresa , pCodigoSocio};
+                resultado = AccesoCompras.obtenerFacturasCompraPendientes(pArgumentos);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return resultado;
+        }
+
+        public static List<Compra> obtenerTotalFacturasCompraPendientes(string pEmpresa)
         {
             List<Compra> resultado = new List<Compra>();
             try
             {
                 object[] pArgumentos = new object[] { pEmpresa };
-                resultado = AccesoCompras.obtenerFacturasCompraPendientes(pArgumentos);
+                resultado = AccesoCompras.obtenerTotalFacturasCompraPendientes(pArgumentos);
             }
             catch (Exception ex)
             {
@@ -69,7 +75,7 @@ namespace SistemaContable.Logica
             List<string> resultado = new List<string>();
             try
             {
-                resultado = AccesoCuentas.obtenerTipoCuentas();
+                resultado = AccesoCompras.obtenerTipoCompras();
             }
             catch (Exception ex)
             {

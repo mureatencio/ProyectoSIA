@@ -41,7 +41,7 @@
             // 
             // btnGenerar
             // 
-            this.btnGenerar.Location = new System.Drawing.Point(522, 47);
+            this.btnGenerar.Location = new System.Drawing.Point(522, 12);
             this.btnGenerar.Name = "btnGenerar";
             this.btnGenerar.Size = new System.Drawing.Size(75, 23);
             this.btnGenerar.TabIndex = 0;
@@ -52,15 +52,15 @@
             // cmbPeriodo
             // 
             this.cmbPeriodo.FormattingEnabled = true;
-            this.cmbPeriodo.Location = new System.Drawing.Point(85, 49);
+            this.cmbPeriodo.Location = new System.Drawing.Point(85, 14);
             this.cmbPeriodo.Name = "cmbPeriodo";
-            this.cmbPeriodo.Size = new System.Drawing.Size(121, 21);
+            this.cmbPeriodo.Size = new System.Drawing.Size(165, 21);
             this.cmbPeriodo.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 52);
+            this.label1.Location = new System.Drawing.Point(8, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 13);
             this.label1.TabIndex = 2;
@@ -69,14 +69,14 @@
             // dtgReporte
             // 
             this.dtgReporte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgReporte.Location = new System.Drawing.Point(12, 115);
+            this.dtgReporte.Location = new System.Drawing.Point(12, 54);
             this.dtgReporte.Name = "dtgReporte";
-            this.dtgReporte.Size = new System.Drawing.Size(585, 210);
+            this.dtgReporte.Size = new System.Drawing.Size(585, 281);
             this.dtgReporte.TabIndex = 3;
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(465, 332);
+            this.btnVolver.Location = new System.Drawing.Point(522, 341);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
             this.btnVolver.TabIndex = 4;
@@ -86,7 +86,7 @@
             // 
             // btnExportar
             // 
-            this.btnExportar.Location = new System.Drawing.Point(361, 331);
+            this.btnExportar.Location = new System.Drawing.Point(441, 341);
             this.btnExportar.Name = "btnExportar";
             this.btnExportar.Size = new System.Drawing.Size(75, 23);
             this.btnExportar.TabIndex = 5;
@@ -97,15 +97,15 @@
             // comboBoxPeriodoFin
             // 
             this.comboBoxPeriodoFin.FormattingEnabled = true;
-            this.comboBoxPeriodoFin.Location = new System.Drawing.Point(322, 49);
+            this.comboBoxPeriodoFin.Location = new System.Drawing.Point(322, 14);
             this.comboBoxPeriodoFin.Name = "comboBoxPeriodoFin";
-            this.comboBoxPeriodoFin.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxPeriodoFin.Size = new System.Drawing.Size(167, 21);
             this.comboBoxPeriodoFin.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(256, 52);
+            this.label2.Location = new System.Drawing.Point(256, 17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 7;

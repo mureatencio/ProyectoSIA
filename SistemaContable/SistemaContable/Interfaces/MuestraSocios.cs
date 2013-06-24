@@ -54,11 +54,19 @@ namespace SistemaContable.Interfaces
 
         private void dtgrdSocios_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            //string del codigo del socio
+            string codigosocio = this.dtgrdSocios[0, e.RowIndex].Value.ToString();
             if (e.ColumnIndex == 8)
             {
-                //string del codigo del socio
-                string codigosocio = this.dtgrdSocios[0, e.RowIndex].Value.ToString();
+                VentanaDocSocioCompras ventanadocsComprasS = new VentanaDocSocioCompras(empresa, codigosocio);
+                ventanadocsComprasS.ShowDialog();
                 //LLamar a la ventana de mostrar documentos del socio
+            }
+            if (e.ColumnIndex == 9)
+            {
+                VentanaDocsSociosVentas ventanadocsVentasS = new VentanaDocsSociosVentas(empresa, codigosocio);
+                ventanadocsVentasS.ShowDialog();
+                //LLamar ventana docs socios ventas
             }
         }
 

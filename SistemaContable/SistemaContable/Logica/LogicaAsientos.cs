@@ -26,7 +26,7 @@ namespace SistemaContable.Logica
             return numeroCompania;
         }
 
-        /*public static void crearAsiento(DataTable Tabla, string Compania, int numAsiento, string detalle)
+        /*public static void crearAsiento(DataTable Tabla, string Compania, int numAsiento, string detalle, "AS", "")
         {
             try
             {
